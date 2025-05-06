@@ -1,1 +1,7 @@
-# Hi, I'm Praween Kumar
+# pkumar.link
+
+# Server Netlify
+dns1.p09.nsone.net
+dns2.p09.nsone.net
+dns3.p09.nsone.net
+dns4.p09.nsone.net

@@ -1,104 +1,388 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <meta charset="UTF-8">
+    <link rel="icon" href="./assets/p.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/images_gallery.css">
+    <script src="./js/images_gallery.js"></script>
+    <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="https://praween-link.github.io/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="praweenkumar">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Praween Kumar</title>
-  <link rel="manifest" href="manifest.json">
+    <title>Praween Kumar</title>
 </head>
+
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '3836090470';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
+    <div class="app">
+        <div id="home" class="app-body">
+            <header>
+                <nav>
+                    <span><a href="#home" class="remove-hash"><span> <img class="logo"
+                                    src="./assets/p.png"></span></a></span>
+                    <div class="nav-bar-items" id="nav-desktop-view">
+                        <a href="#home" class="remove-hash">Home</a>
+                        <a href="#aboutme" class="remove-hash">About Me</a>
+                        <a href="#projects" class="remove-hash">Project</a>
+                        <a href="#contact-us" class="remove-hash">Contact Us</a>
+                        <a
+                            href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link">Resume</a>
+                    </div>
+                    <div id="menu">
+                        <a onclick="menuToggle()" id="menu" class="menu"><i class="fa-solid fa-bars"
+                                style="font-size: 1.2rem;"></i></a>
+                    </div>
+                </nav>
+            </header>
+            <!-- Menu Items -->
+            <div id="nav-menu-items" class="nav-menu-items">
+                <ul>
+                    <div>
+                        <a onclick="menuToggle()" id="menu"><i class="fa-solid fa-xmark"
+                                style="font-size: 1.5rem; padding-right: 6px;"></i></a>
+                    </div>
+                    <li><a onclick="menuToggle()" href="#home" class="remove-hash">Home</a></li>
+                    <li><a onclick="menuToggle()" href="#aboutme" class="remove-hash">About Me</a></li>
+                    <li><a onclick="menuToggle()" href="#projects" class="remove-hash">Project</a></li>
+                    <li><a onclick="menuToggle()" href="#contact-us" class="remove-hash">Contact Us</a></li>
+                    <li><a onclick="menuToggle()"
+                            href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Home Section -->
+            <div class="home-section ">
+                <div class="about">
+                    <div class="about-contents">
+                        <h2>
+                            Hello! I'm,<br />
+                            Praween Kumar
+                        </h2><br />
+                        <p>
+                            I’m a Flutter Developer with 3+ years of experience building scalable mobile apps, and
+                            strong proficiency in Node.js
+                            (with Mongoose) and React.js. I specialize in creating performant, responsive UIs and
+                            full-stack solutions for modern
+                            applications.
+                        </p>
+                        <br /><br />
+                        <!-- Social Icons -->
+                        <ul class="social-icons">
+                            <li><a href="https://github.com/praween-link"><i class="fab fa-brands fa-github"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/pkumar-link/"><i
+                                        class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                            <li class="srolling-view"><a href="https://pub.dev/publishers/pkumar.link"><i
+                                        class="fab fa-brands fa-dart-lang" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/@pkumarlink"><i class="fab fa-youtube"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/pkumarlink"><i class="fab fa-x-twitter"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/pkumar.link/"><i class="fab fa-instagram"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
+                        <!---------->
+                    </div>
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
+                    <div class="about-img">
+                        <br /><br /><br /><br /><br /><br /><br />
+                        <!-- <div class="m-card"> -->
+                        <div class="mobile profile-mob">
+                            <div class="mob-profile-scr">
+                                <img class="blur" src="./assets//my_profile_img.jpeg" alt="Avatar" style="width:60px">
+                                <div class="profile-info">
+                                    <h5 class="blur">Praween Kumar</h5>
+                                    <p>Software Developer</p>
+                                    <div class="mob-reactions">
+                                        <div class="activity">
+                                            <p>501K</p>
+                                            <span>Followers</span>
+                                        </div>
+                                        <div class="activity">
+                                            <p>18K</p>
+                                            <span>Share</span>
+                                        </div>
+                                        <div class="activity">
+                                            <p>50K</p>
+                                            <span>Followings</span>
+                                        </div>
+                                    </div>
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
+                                    <div class="followme-btn">
+                                        <span>Follow</span>
+                                    </div>
+                                </div>
+
+                                <div class="mob-post">
+                                    <div class="post-child">
+                                        <div class="post">
+                                            <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
+                                                alt="Mob Post">
+                                            <p>Node.js is a server-side JavaScript</p>
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <div class="big-post post">
+                                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
+                                                alt="Mob Post">
+                                            <p>Flutter is software development kit</p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="post-child">
+                                        <div class="post">
+                                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
+                                                alt="Mob Post">
+                                            <p>Flutter is software development kit</p>
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <div class="post">
+                                            <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
+                                                alt="Mob Post">
+                                            <p>Node.js is a server-side JavaScript</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- List -->
+                        <div class="mobile">
+                            <div class="mob-profile-scr">
+                                <img src="./assets//my_profile_img.jpeg" alt="Avatar" style="width:60px">
+                                <div class="profile-info">
+                                    <h5>Praween Kumar</h5>
+                                    <p>Software Developer</p>
+                                    <div class="mob-reactions">
+                                        <div class="activity">
+                                            <p>501K</p>
+                                            <span>Followers</span>
+                                        </div>
+                                        <div class="activity">
+                                            <p>18K</p>
+                                            <span>Share</span>
+                                        </div>
+                                        <div class="activity">
+                                            <p>50K</p>
+                                            <span>Followings</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="followme-btn">
+                                        <span>Follow</span>
+                                    </div>
+                                </div>
+
+                                <div class="mob-post">
+                                    <div class="post-child">
+                                        <div class="post">
+                                            <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
+                                                alt="Mob Post">
+                                            <p>Node.js is a server-side JavaScript</p>
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <div class="big-post post">
+                                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
+                                                alt="Mob Post">
+                                            <p>Flutter is software development kit</p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="post-child">
+                                        <div class="post">
+                                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
+                                                alt="Mob Post">
+                                            <p>Flutter is software development kit</p>
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <div class="post">
+                                            <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
+                                                alt="Mob Post">
+                                            <p>Node.js is a server-side JavaScript</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section -->
+
+            <!-- ======================= About Me ====================== -->
+            <div id="aboutme" class="section">
+                <div class="header srolling-view">
+                    <span>About Me</span>
+                    <p>Experience, Skills & Educations</p>
+                </div>
+                <div class="items-group srolling-view">
+                    <h3 class="special-text">
+                        <span>Mobile Application</span>
+                    </h3>
+                    <h3 class="special-text">
+                        <span>Web Application</span>
+                    </h3>
+                </div>
+
+                <div class="aboutme-text-card srolling-view">
+                    <p class="amount-me-text">
+                        I am a Software Developer with 3+ years of experience specializing in Flutter for cross-platform
+                        mobile app development,
+                        along with solid backend skills in Node.js and Mongoose, and frontend expertise in React.js. I
+                        focus on delivering
+                        performant, scalable, and user-centric applications. With hands-on experience in fintech
+                        solutions like NeoZap, I’ve
+                        contributed to secure onboarding systems, feature-rich UI, optimized architecture, and seamless
+                        third-party integrations
+                        across platforms.
+                    </p>
+                </div>
+
+                <div class="skills srolling-view">
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-green"></div>&nbsp;&nbsp;
+                        <span>Node Js</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue-dark"></div>&nbsp;&nbsp;
+                        <span>Dart</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot"></div>&nbsp;&nbsp;
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>Data Structure</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-orange"></div>&nbsp;&nbsp;
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-purple"></div>&nbsp;&nbsp;
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="board-list">
+                    <div id="my-experiances"></div>
+                </div>
+            </div>
+
+            <!-- ======================= My Projects/Works ====================== -->
+            <div id="projects" class="section">
+                <div class="header srolling-view">
+                    <span>Projects</span>
+                    <p>Android & IOS Application</p>
+                </div>
+                <div class="items-group srolling-view">
+                    <h3 class="special-text">
+                        <span>Android Application</span>
+                    </h3>
+                    <h3 class="special-text">
+                        <span>IOS Application</span>
+                    </h3>
+                </div>
+
+                <div class="board-list">
+                    <div id="my-projects"></div>
+                </div>
+
+                <br />
+                <!-- <br/>
+                <br/> -->
+                <!-- // -->
+                <!-- <div class="items-group srolling-view">
+                    <h3 class="special-text">
+                        <span>Web Application</span>
+                    </h3>
+                </div>
+
+                <div class="board-list">
+                    <div id="my-projects-web"></div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- ======================= Footer Section ========================-->
+
+        <div id="contact-us" class="footer-section">
+            <div class="footer-contents">
+                <h2 class="srolling-view">Praween Kumar</h2>
+                <h6 class="srolling-view">pkumar.link@gmail.com</h6>
+                <!-- Social Icons -->
+                <ul class="social-icons">
+                    <li class="srolling-view"><a href="https://github.com/praween-link"><i
+                                class="fab fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li class="srolling-view"><a href="https://www.linkedin.com/in/pkumar-link/"><i
+                                class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li class="srolling-view"><a href="https://pub.dev/publishers/pkumar.link"><i
+                                class="fab fa-brands fa-dart-lang" aria-hidden="true"></i></a></li>
+                    <li class="srolling-view"><a href="https://www.youtube.com/@pkumarlink"><i class="fab fa-youtube"
+                                aria-hidden="true"></i></a></li>
+                    <li class="srolling-view"><a href="https://twitter.com/pkumarlink"><i class="fab fa-x-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li class="srolling-view"><a href="https://www.instagram.com/pkumar.link/"><i
+                                class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <!---------->
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Praween Kumar</span>
+                <a href="mailto:pkumar.link@gmail.com"><span><i class="fa-solid fa-envelope"></i> Contact Us</span></a>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="./js/script.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/common/project_widgets.js"></script>
+<script src="./js/common/image_view.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('.remove-hash');
+        links.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default behavior of navigating to the section
+
+                var href = this.getAttribute('href');
+                var sectionId = href.substring(1); // Remove the '#' symbol
+                var targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
+                }
+
+                // Change the URL without the '#' symbol
+                history.pushState({}, document.title, window.location.pathname + window.location.search);
+            });
+        });
+    });
+</script>
+
+<script>
+    // Simulate page load delay
+    setTimeout(function () {
+        document.querySelector('.loader-wrapper').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    }, 2000); // 2 seconds delay
+</script>
+
 </html>
