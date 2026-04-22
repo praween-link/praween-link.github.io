@@ -15,6 +15,8 @@ const projectsData = [
         ],
         "android": "https://play.google.com/store/apps/details?id=com.neofinity.neozap",
         "ios": "https://apps.apple.com/in/app/neozap-tap-pay-with-iphone/id6547854547",
+        "theme": { "bg": "linear-gradient(135deg, #1a0b3b, #0d0d2b)", "icon": "fa-microchip", "accent": "#6c63ff" },
+        "type": "fintech"
     },
     {
         "id": "01",
@@ -45,6 +47,8 @@ const projectsData = [
             "assets/project/lifeizz/lifeizz18.jpg"
         ],
         "android": "https://drive.google.com/drive/folders/1Ay7Cl181HHMk-tTypnTkuWcucX0vmpHU?usp=drive_link",
+        "theme": { "bg": "linear-gradient(135deg, #2e1a4d, #1a0b3b)", "icon": "fa-language", "accent": "#ff6b9d" },
+        "type": "language"
     },
     {
         "id": "02",
@@ -73,6 +77,8 @@ const projectsData = [
         ],
         "android": "https://play.google.com/store/apps/details?id=com.app.ownitoo",
         "ios": "https://apps.apple.com/in/app/ownitoo/id6448990297",
+        "theme": { "bg": "linear-gradient(135deg, #0d1b3b, #1a237e)", "icon": "fa-coins", "accent": "#ffd166" },
+        "type": "marketplace"
     },
     {
         "id": "03",
@@ -97,7 +103,9 @@ const projectsData = [
             "assets/project/blubin/blubin12.jpeg",
             "assets/project/blubin/blubin13.jpeg"
         ],
-        "android": "https://drive.google.com/drive/folders/11wYTPi6h3_CaO5Pd4wMFCXdjZ43Lb9BS?usp=drive_link"
+        "android": "https://drive.google.com/drive/folders/11wYTPi6h3_CaO5Pd4wMFCXdjZ43Lb9BS?usp=drive_link",
+        "theme": { "bg": "linear-gradient(135deg, #0b2e1a, #1a3b2b)", "icon": "fa-leaf", "accent": "#00d4ff" },
+        "type": "eco"
     },
     {
         "id": "04",
@@ -105,9 +113,10 @@ const projectsData = [
         "sub_title": "Application (Android & IOS)",
         "about": `<b>ownUrHealth™</b> is a state-of-the-art digital healthcare platform built with Flutter for Android and iOS devices. Operated by The Center for Healthcare Education, Research & Innovation (C.H.E.R.I.), its mission is to enhance access to healthcare services and improve health outcomes.
 
-        Key features include seamless appointment booking, symptom check surveys, and secure messaging between patients, caretakers, and healthcare professionals. The app also offers QR code generation of users, medication management, and subscription services.
-        
-        With ownUrHealth™, users can take control of their health, collaborate effectively with healthcare providers, and benefit from streamlined healthcare management, leading to improved overall well-being and access to quality care.`,
+
+       Key features include seamless appointment booking, symptom check surveys, and secure messaging between patients, caretakers, and healthcare professionals. The app also offers QR code generation of users, medication management, and subscription services.
+      
+       With ownUrHealth™, users can take control of their health, collaborate effectively with healthcare providers, and benefit from streamlined healthcare management, leading to improved overall well-being and access to quality care.`,
         "key_points": [
             "API integration", "Socket-Chat", "Notifications", "Payment Getaways"
         ],
@@ -127,11 +136,13 @@ const projectsData = [
             "assets/project/ownurhealth/ouh13.jpeg",
             "assets/project/ownurhealth/ouh14.jpeg",
             "assets/project/ownurhealth/ouh15.jpeg",
-            "assets/project/ownurhealth/ouh16.jpeg",
+            "assets/project/ownurhealth/ouh16.jpeg"
         ],
         // "project_link": "https://play.google.com/store/apps/details?id=com.ownUrHealth",
         "android": "https://play.google.com/store/apps/details?id=com.ownUrHealth",
         "ios": "https://apps.apple.com/in/app/ownurhealth/id1614815153",
+        "theme": { "bg": "linear-gradient(135deg, #00363a, #006064)", "icon": "fa-heart-pulse", "accent": "#ffffff" },
+        "type": "health"
     },
     {
         "id": "05",
@@ -160,6 +171,8 @@ const projectsData = [
             "assets/project/jobbie/jobbie16.jpeg",
             "assets/project/jobbie/jobbie17.jpeg"
         ],
+        "theme": { "bg": "linear-gradient(135deg, #4e342e, #5d4037)", "icon": "fa-map-pin", "accent": "#ffd166" },
+        "type": "gig"
     },
     {
         "id": "06",
@@ -170,11 +183,15 @@ const projectsData = [
             "UI Design", "Functionalities", "Loal DB"
         ],
         "images": [
-            "assets/project/mytasks/1.webp", "assets/project/mytasks/2.webp",
-            "assets/project/mytasks/3.webp", "assets/project/mytasks/4.webp",
+            "assets/project/mytasks/1.webp",
+            "assets/project/mytasks/2.webp",
+            "assets/project/mytasks/3.webp",
+            "assets/project/mytasks/4.webp",
             "assets/project/mytasks/5.webp"
         ],
         "android": "https://play.google.com/store/apps/details?id=com.pkumar.link.mytasks",
+        "theme": { "bg": "linear-gradient(135deg, #1c2331, #2e3b4e)", "icon": "fa-check-double", "accent": "#ffffff" },
+        "type": "task"
     }
 ]
 /// Json Data of Products Web
@@ -209,12 +226,12 @@ const experianceData = [
                 "title": "Antino",
                 "location": "Gurgaon, Haryana",
                 "start_date": "June 2024",
-                "end_date": "Persent",
-                "designation": "Flutter Developer",
-                "describe": `As a Software Developer specializing in Flutter, I work on the client side of a NeoZap Fintech & Payments product, contributing directly to the user-facing experience of the application. My primary responsibilities include: 
-                - <i style="text-decoration-color:#515152">Developing new features and implementing functional changes</i>,
-                 - <i style="text-decoration-color:#515152">Optimizing codebase structure to enhance maintainability and scalability</i>,
-                - <i style="text-decoration-color:#515152">Improving app performance, including reducing load times, enhancing responsiveness, and ensuring smooth interactions</i>`,
+                "end_date": "Present",
+                "designation": "Software Developer",
+                "describe": `As a Software Developer specializing in Flutter, I work on the client side of a NeoZap Fintech & Payments product, contributing directly to the user-facing experience of the application. My primary responsibilities include:
+               - <i style="text-decoration-color:#515152">Developing new features and implementing functional changes</i>,
+                - <i style="text-decoration-color:#515152">Optimizing codebase structure to enhance maintainability and scalability</i>,
+               - <i style="text-decoration-color:#515152">Improving app performance, including reducing load times, enhancing responsiveness, and ensuring smooth interactions</i>`,
                 "theme": "rgba(255, 255, 255, 0.8)",
                 "themeOp": "rgba(255, 255, 255, 0.5)"
             },
@@ -227,10 +244,10 @@ const experianceData = [
                 "end_date": "March 2024",
                 "designation": "Software Developer (Flutter)",
                 "describe": `As a proficient Flutter Developer at Cqlsys Technologies, I undertook a pivotal role in driving
-                the success of three distinct projects, taking full ownership of each, with a particular
-                emphasis on the functionality aspect. My responsibilities included extensive work in API
-                integration, notification, payment gateway, real-time chats, biding, tracking features, and
-                authentications.`,
+               the success of three distinct projects, taking full ownership of each, with a particular
+               emphasis on the functionality aspect. My responsibilities included extensive work in API
+               integration, notification, payment gateway, real-time chats, biding, tracking features, and
+               authentications.`,
                 "theme": "#33a85878",
                 "themeOp": "#33a8584d"
             },
@@ -243,11 +260,11 @@ const experianceData = [
                 "end_date": "June 2023",
                 "designation": "Flutter Developer",
                 "describe": `At NexEver Pvt. Ltd, as a Flutter Developer, I played a key role in executing 4-5 projects.
-                Responsible for UI design, functionality, and critical elements like API integration,
-                notifications, real-time chats, payment gateway integration, and authentication within a
-                collaborative team environment.
-                This experience has significantly enhanced my expertise in UI design, functionality, and
-                teamwork.`,
+               Responsible for UI design, functionality, and critical elements like API integration,
+               notifications, real-time chats, payment gateway integration, and authentication within a
+               collaborative team environment.
+               This experience has significantly enhanced my expertise in UI design, functionality, and
+               teamwork.`,
                 "theme": "#e750107f", //op-> 50%
                 "themeOp": "#e750105c", //op-> 80%
             }
