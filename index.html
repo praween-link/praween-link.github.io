@@ -1,394 +1,950 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <base href="https://praween-link.github.io/">
-  <link rel="icon" href="./assets/p.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/images_gallery.css">
-  <script src="./js/images_gallery.js"></script>
-  <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
 
-  <title>Praween Kumar</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Praween Kumar — Flutter Developer with 4+ years experience building scalable cross-platform mobile apps, Node.js backends, and React.js frontends." />
+  <meta name="keywords"
+    content="Flutter Developer, Mobile App Developer, Node.js, React.js, Dart, Android, iOS, Praween Kumar" />
+  <meta property="og:title" content="Praween Kumar — Flutter Developer" />
+  <meta property="og:description" content="Building beautiful, performant mobile & web experiences." />
+  <title>Praween Kumar — Software Developer</title>
+  <link rel="icon" href="./assets/p.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-  <div class="app">
-    <div id="home" class="app-body">
-      <header>
-        <nav>
-          <span><a href="#home" class="remove-hash"><span> <img class="logo" src="./assets/p.png"></span></a></span>
-          <div class="nav-bar-items" id="nav-desktop-view">
-            <a href="#home" class="remove-hash">Home</a>
-            <a href="#aboutme" class="remove-hash">About Me</a>
-            <a href="#projects" class="remove-hash">Project</a>
-            <a href="#contact-us" class="remove-hash">Contact Us</a>
-            <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link">Resume</a>
-          </div>
-          <div id="menu">
-            <a onclick="menuToggle()" id="menu" class="menu"><i class="fa-solid fa-bars"
-                style="font-size: 1.2rem;"></i></a>
-          </div>
-        </nav>
-      </header>
-      <!-- Menu Items -->
-      <div id="nav-menu-items" class="nav-menu-items">
-        <ul>
-          <div>
-            <a onclick="menuToggle()" id="menu"><i class="fa-solid fa-xmark"
-                style="font-size: 1.5rem; padding-right: 6px;"></i></a>
-          </div>
-          <li><a onclick="menuToggle()" href="#home" class="remove-hash">Home</a></li>
-          <li><a onclick="menuToggle()" href="#aboutme" class="remove-hash">About Me</a></li>
-          <li><a onclick="menuToggle()" href="#projects" class="remove-hash">Project</a></li>
-          <li><a onclick="menuToggle()" href="#contact-us" class="remove-hash">Contact Us</a></li>
-          <li><a onclick="menuToggle()"
-              href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link">Resume</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Home Section -->
-      <div class="home-section ">
-        <div class="about">
-          <div class="about-contents">
-            <h2>
-              Hello! I'm,<br />
-              Praween Kumar
-            </h2><br />
-            <p>
-              I’m a Flutter Developer with 3+ years of experience building scalable mobile apps, and
-              strong proficiency in Node.js
-              (with Mongoose) and React.js. I specialize in creating performant, responsive UIs and
-              full-stack solutions for modern
-              applications.
-            </p>
-            <br /><br />
-            <!-- Social Icons -->
-            <ul class="social-icons">
-              <li><a href="https://github.com/praween-link"><i class="fab fa-brands fa-github"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/pkumar-link/"><i class="fab fa-brands fa-linkedin-in"
-                    aria-hidden="true"></i></a></li>
-              <li class="srolling-view"><a href="https://pub.dev/publishers/pkumar.link"><i
-                    class="fab fa-brands fa-dart-lang" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.youtube.com/@pkumarlink"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-              </li>
-              <!-- <li><a href="https://twitter.com/pkumarlink"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li> -->
-              <li><a href="https://www.instagram.com/pkumar.link/"><i class="fab fa-instagram"
-                    aria-hidden="true"></i></a></li>
-            </ul>
-            <!---------->
-          </div>
 
-          <div class="about-img">
-            <br /><br /><br /><br /><br /><br /><br />
-            <!-- <div class="m-card"> -->
-            <div class="mobile profile-mob">
-              <div class="mob-profile-scr">
-                <img class="blur" src="./assets//my_profile_img.jpeg" alt="Avatar" style="width:60px">
-                <div class="profile-info">
-                  <h5 class="blur">Praween Kumar</h5>
-                  <p>Software Developer</p>
-                  <div class="mob-reactions">
-                    <div class="activity">
-                      <p>501K</p>
-                      <span>Followers</span>
-                    </div>
-                    <div class="activity">
-                      <p>18K</p>
-                      <span>Share</span>
-                    </div>
-                    <div class="activity">
-                      <p>50K</p>
-                      <span>Followings</span>
-                    </div>
-                  </div>
 
-                  <div class="followme-btn">
-                    <span>Follow</span>
-                  </div>
-                </div>
+  <!-- ============ BACKGROUND ============ -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
 
-                <div class="mob-post">
-                  <div class="post-child">
-                    <div class="post">
-                      <img
-                        src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
-                        alt="Mob Post">
-                      <p>Node.js is a server-side JavaScript</p>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;
-                    <div class="big-post post">
-                      <img
-                        src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
-                        alt="Mob Post">
-                      <p>Flutter is software development kit</p>
-                    </div>
-                  </div>
-                  <br />
 
-                  <div class="post-child">
-                    <div class="post">
-                      <img
-                        src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
-                        alt="Mob Post">
-                      <p>Flutter is software development kit</p>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;
-                    <div class="post">
-                      <img
-                        src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
-                        alt="Mob Post">
-                      <p>Node.js is a server-side JavaScript</p>
-                    </div>
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-                  </div>
-                </div>
 
-              </div>
-            </div>
-            <!-- List -->
-            <div class="mobile">
-              <div class="mob-profile-scr">
-                <img src="./assets//my_profile_img.jpeg" alt="Avatar" style="width:60px">
-                <div class="profile-info">
-                  <h5>Praween Kumar</h5>
-                  <p>Software Developer</p>
-                  <div class="mob-reactions">
-                    <div class="activity">
-                      <p>501K</p>
-                      <span>Followers</span>
-                    </div>
-                    <div class="activity">
-                      <p>18K</p>
-                      <span>Share</span>
-                    </div>
-                    <div class="activity">
-                      <p>50K</p>
-                      <span>Followings</span>
-                    </div>
-                  </div>
+  <!-- ============ CURSOR GLOW ============ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-                  <div class="followme-btn">
-                    <span>Follow</span>
-                  </div>
-                </div>
 
-                <div class="mob-post">
-                  <div class="post-child">
-                    <div class="post">
-                      <img
-                        src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
-                        alt="Mob Post">
-                      <p>Node.js is a server-side JavaScript</p>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;
-                    <div class="big-post post">
-                      <img
-                        src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
-                        alt="Mob Post">
-                      <p>Flutter is software development kit</p>
-                    </div>
-                  </div>
-                  <br />
-
-                  <div class="post-child">
-                    <div class="post">
-                      <img
-                        src="https://blogger.googleusercontent.com/img/a/AVvXsEjSMOIC8Ywux2B_qr9i0NjPuKpFlnyhHXiqjJf2BOjqYARmXgeLJWdO16BSvHzoXO9RvuB5TV0-HxZeFkDb0IqqnnlGxm_vfaJh1CHT--VUEBG7H4seBeZoSbR4w6L17Nv8BToWHw3j_5Dl8wP7ICpRMs6kc3JW1Rs0DcW6FV4F1en7HmedY_xZsL5O"
-                        alt="Mob Post">
-                      <p>Flutter is software development kit</p>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;
-                    <div class="post">
-                      <img
-                        src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/nodejs-reference-architecture_2x.png"
-                        alt="Mob Post">
-                      <p>Node.js is a server-side JavaScript</p>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Section -->
-
-      <!-- ======================= About Me ====================== -->
-      <div id="aboutme" class="section">
-        <div class="header srolling-view">
-          <span>About Me</span>
-          <p>Experience, Skills & Educations</p>
-        </div>
-        <div class="items-group srolling-view">
-          <h3 class="special-text">
-            <span>Mobile Application</span>
-          </h3>
-          <h3 class="special-text">
-            <span>Web Application</span>
-          </h3>
-        </div>
-
-        <div class="aboutme-text-card srolling-view">
-          <p class="amount-me-text">
-            I am a Software Developer with 3+ years of experience specializing in Flutter for cross-platform
-            mobile app development,
-            along with solid backend skills in Node.js and Mongoose, and frontend expertise in React.js. I
-            focus on delivering
-            performant, scalable, and user-centric applications. With hands-on experience in fintech
-            solutions like NeoZap, I’ve
-            contributed to secure onboarding systems, feature-rich UI, optimized architecture, and seamless
-            third-party integrations
-            across platforms.
-          </p>
-        </div>
-
-        <div class="skills srolling-view">
-          <div class="skill-tag">
-            <div class="dot dot-blue"></div>&nbsp;&nbsp;
-            <span>Flutter</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-green"></div>&nbsp;&nbsp;
-            <span>Node Js</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-blue-dark"></div>&nbsp;&nbsp;
-            <span>Dart</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot"></div>&nbsp;&nbsp;
-            <span>Java</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-blue"></div>&nbsp;&nbsp;
-            <span>Data Structure</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-orange"></div>&nbsp;&nbsp;
-            <span>HTML</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-blue"></div>&nbsp;&nbsp;
-            <span>CSS</span>
-          </div>
-          <div class="skill-tag">
-            <div class="dot dot-purple"></div>&nbsp;&nbsp;
-            <span>Bootstrap</span>
-          </div>
-        </div>
-
-        <div class="board-list">
-          <div id="my-experiances"></div>
-        </div>
-      </div>
-
-      <!-- ======================= My Projects/Works ====================== -->
-      <div id="projects" class="section">
-        <div class="header srolling-view">
-          <span>Projects</span>
-          <p>Android & IOS Application</p>
-        </div>
-        <div class="items-group srolling-view">
-          <h3 class="special-text">
-            <span>Android Application</span>
-          </h3>
-          <h3 class="special-text">
-            <span>IOS Application</span>
-          </h3>
-        </div>
-
-        <div class="board-list">
-          <div id="my-projects"></div>
-        </div>
-
-        <br />
-        <!-- <br/>
-                <br/> -->
-        <!-- // -->
-        <!-- <div class="items-group srolling-view">
-                    <h3 class="special-text">
-                        <span>Web Application</span>
-                    </h3>
-                </div>
-
-                <div class="board-list">
-                    <div id="my-projects-web"></div>
-                </div> -->
-      </div>
-    </div>
-
-    <!-- ======================= Footer Section ========================-->
-
-    <div id="contact-us" class="footer-section">
-      <div class="footer-contents">
-        <h2 class="srolling-view">Praween Kumar</h2>
-        <h6 class="srolling-view">pkumar.link@gmail.com</h6>
-        <!-- Social Icons -->
-        <ul class="social-icons">
-          <li class="srolling-view"><a href="https://github.com/praween-link"><i class="fab fa-brands fa-github"
-                aria-hidden="true"></i></a></li>
-          <li class="srolling-view"><a href="https://www.linkedin.com/in/pkumar-link/"><i
-                class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-          <li class="srolling-view"><a href="https://pub.dev/publishers/pkumar.link"><i
-                class="fab fa-brands fa-dart-lang" aria-hidden="true"></i></a></li>
-          <li class="srolling-view"><a href="https://www.youtube.com/@pkumarlink"><i class="fab fa-youtube"
-                aria-hidden="true"></i></a></li>
-          <!-- <li class="srolling-view"><a href="https://twitter.com/pkumarlink"><i class="fab fa-x-twitter"
-                aria-hidden="true"></i></a></li> -->
-          <li class="srolling-view"><a href="https://www.instagram.com/pkumar.link/"><i class="fab fa-instagram"
-                aria-hidden="true"></i></a></li>
-        </ul>
-        <!---------->
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2024 Praween Kumar</span>
-        <a href="mailto:pkumar.link@gmail.com"><span><i class="fa-solid fa-envelope"></i> Contact Us</span></a>
-      </div>
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" role="status" aria-label="Loading">
+    <div class="loader-logo">PK</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
     </div>
   </div>
-</body>
 
-<script src="./js/script.js"></script>
-<script src="./js/data.js"></script>
-<script src="./js/common/project_widgets.js"></script>
-<script src="./js/common/image_view.js"></script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var links = document.querySelectorAll('.remove-hash');
-    links.forEach(function (link) {
-      link.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default behavior of navigating to the section
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="back-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-        var href = this.getAttribute('href');
-        var sectionId = href.substring(1); // Remove the '#' symbol
-        var targetSection = document.getElementById(sectionId);
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
+
+  <!-- ============ IMAGE LIGHTBOX ============ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="lightboxImg" class="lightbox-img" alt="Project screenshot" />
+    <div class="lightbox-nav">
+      <button class="lightbox-btn" id="lightboxPrev" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <span class="lightbox-counter" id="lightboxCounter">1 / 1</span>
+      <button class="lightbox-btn" id="lightboxNext" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ============ APP WRAPPER ============ -->
+  <div class="app-wrapper">
+
+
+    <!-- ======== NAVBAR ======== -->
+    <header id="header">
+      <nav aria-label="Main navigation">
+        <a href="#home" class="nav-logo" id="nav-logo-link">
+          <div class="nav-logo-icon">PK</div>
+          <span>Praween Kumar</span>
+        </a>
+
+
+        <ul class="nav-links" id="nav-desktop-links">
+          <li><a href="#home" class="nav-scroll">Home</a></li>
+          <li><a href="#about" class="nav-scroll">About</a></li>
+          <li><a href="#experience" class="nav-scroll">Experience</a></li>
+          <li><a href="#projects" class="nav-scroll">Projects</a></li>
+          <li><a href="#contact" class="nav-scroll">Contact</a></li>
+          <li>
+            <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
+              target="_blank" rel="noopener" class="nav-cta">
+              <i class="fa-solid fa-file-arrow-down"></i>&nbsp; Resume
+            </a>
+          </li>
+        </ul>
+
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#home" class="nav-scroll mob-link">Home</a></li>
+        <li><a href="#about" class="nav-scroll mob-link">About</a></li>
+        <li><a href="#experience" class="nav-scroll mob-link">Experience</a></li>
+        <li><a href="#projects" class="nav-scroll mob-link">Projects</a></li>
+        <li><a href="#contact" class="nav-scroll mob-link">Contact</a></li>
+        <li>
+          <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
+            target="_blank" rel="noopener" class="mob-link">
+            <i class="fa-solid fa-file-arrow-down"></i>&nbsp; Download Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- ======================================================
+        HERO SECTION
+   ====================================================== -->
+    <section id="home" aria-label="Hero">
+      <!-- Particle canvas -->
+      <canvas id="hero-particles" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+
+
+        <!-- Left -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Available for work &amp; collaboration
+          </div>
+
+
+          <h1 class="hero-title">
+            Hello! I'm,
+            <span class="name">Praween Kumar</span>
+            <span class="role" id="typed-role"></span>
+          </h1>
+
+
+          <p class="hero-desc">
+            A passionate <strong>Flutter &amp; Full-Stack Developer</strong> with 4+ years of experience
+            crafting performant, scalable mobile &amp; web applications. Specializing in Flutter, Node.js, Dart,
+            and modern UI/UX engineering.
+          </p>
+
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary nav-scroll" id="hero-view-work-btn">
+              <i class="fa-solid fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn-secondary nav-scroll" id="hero-contact-btn">
+              <i class="fa-regular fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+
+
+          <div class="hero-socials">
+            <span>Find me on</span>
+            <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="social-pill"
+              aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener" class="social-pill"
+              aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="social-pill"
+              aria-label="pub.dev" title="pub.dev">
+              <i class="fab fa-dart-lang"></i>
+            </a>
+            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="social-pill"
+              aria-label="YouTube" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="social-pill"
+              aria-label="Instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Right -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-ring"></div>
+            <div class="profile-ring-2"></div>
+
+
+            <!-- Floating tech badges -->
+            <div class="floating-badge floating-badge-1" aria-hidden="true">
+              <i class="fab fa-dart-lang" style="color:#00d4ff"></i> Flutter
+            </div>
+            <div class="floating-badge floating-badge-2" aria-hidden="true">
+              <i class="fab fa-node-js" style="color:#8cc84b"></i> Node.js
+            </div>
+            <div class="floating-badge floating-badge-3" aria-hidden="true">
+              ⚡ 4+ Years Exp
+            </div>
+            <div class="floating-badge floating-badge-4" aria-hidden="true">
+              <i class="fa-solid fa-bolt" style="color:#ffffff"></i> Next.js
+            </div>
+
+
+            <!-- Avatar -->
+            <div class="profile-avatar-wrap">
+              <img src="./assets/my_profile_img.jpeg" alt="Praween Kumar profile photo" class="profile-avatar"
+                id="hero-avatar" />
+            </div>
+
+
+            <!-- Info card -->
+            <div class="profile-info-card">
+              <div class="profile-name">Praween Kumar</div>
+              <div class="profile-role-badge">Flutter &amp; Full-Stack Developer</div>
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <div class="stat-num">4+</div>
+                  <div class="stat-label">Years</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">10+</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">5+</div>
+                  <div class="stat-label">Live Apps</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+        ABOUT SECTION
+   ====================================================== -->
+    <section id="about" aria-label="About Me">
+      <div class="about-grid">
+
+
+        <!-- Left: Text & Skills -->
+        <div class="about-text">
+          <div class="section-tag reveal">
+            <i class="fa-solid fa-user"></i> About Me
+          </div>
+          <h2 class="section-title reveal reveal-delay-1">
+            Crafting Digital <span class="gradient-text">Experiences</span>
+          </h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+
+
+          <p class="reveal reveal-delay-2">
+            I'm a Software Developer with <strong>4+ years of experience</strong> specializing in Flutter
+            for cross-platform mobile app development, along with solid backend skills in Node.js &amp; Mongoose,
+            and frontend expertise in React.js.
+          </p>
+          <p class="reveal reveal-delay-3">
+            I focus on delivering performant, scalable, and user-centric applications. With hands-on experience
+            in fintech solutions like <strong>NeoZap</strong>, I've contributed to secure onboarding systems,
+            feature-rich UI, optimized architecture, and seamless third-party integrations.
+          </p>
+
+
+          <div class="skills-grid reveal reveal-delay-3">
+            <div class="skill-chip"><span class="skill-dot" style="background:#00d4ff"></span>Flutter</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#000000"></span>Next.js</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#8cc84b"></span>Node.js</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#0175c2"></span>Dart</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#f7df1e"></span>JavaScript</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#61dafb"></span>React.js</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#47a248"></span>MongoDB</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#f05032"></span>Git</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#e34c26"></span>HTML / CSS</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#b07219"></span>Java</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#7952b3"></span>Bootstrap</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#6c63ff"></span>REST APIs</div>
+            <div class="skill-chip"><span class="skill-dot" style="background:#ff6b9d"></span>WebSockets</div>
+          </div>
+        </div>
+
+
+        <!-- Right: Stat Cards -->
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-card-icon">🚀</div>
+            <div class="stat-card-num">4+</div>
+            <div class="stat-card-label">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon">📱</div>
+            <div class="stat-card-num">10+</div>
+            <div class="stat-card-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon">🔥</div>
+            <div class="stat-card-num">5+</div>
+            <div class="stat-card-label">Live Apps on Stores</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon">⚡</div>
+            <div class="stat-card-num">20%</div>
+            <div class="stat-card-label">App Size Reduced (NeoZap)</div>
+          </div>
+          <div class="stat-card stat-card-wide">
+            <div class="stat-card-icon">🎓</div>
+            <div class="stat-card-num">B.Tech CSE</div>
+            <div class="stat-card-label">Kurukshetra University · 2018 – 2022</div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+        EXPERIENCE SECTION
+   ====================================================== -->
+    <section id="experience" aria-label="Experience and Education">
+      <div style="max-width:900px;margin:0 auto">
+        <div class="section-tag reveal"><i class="fa-solid fa-briefcase"></i> Career</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          My <span class="gradient-text">Journey</span>
+        </h2>
+        <div class="section-divider reveal reveal-delay-2"></div>
+
+
+        <!-- Tab switcher -->
+        <div class="exp-tabs reveal reveal-delay-2" role="tablist">
+          <button class="exp-tab active" id="tab-work" role="tab" aria-selected="true" aria-controls="panel-work">
+            💼 Work Experience
+          </button>
+          <button class="exp-tab" id="tab-edu" role="tab" aria-selected="false" aria-controls="panel-edu">
+            🎓 Education
+          </button>
+        </div>
+
+
+        <!-- Work Panel -->
+        <div id="panel-work" class="exp-panel active" role="tabpanel" aria-labelledby="tab-work">
+          <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+              <div class="exp-card" id="exp-antino" onclick="toggleExp('exp-antino')">
+                <div class="exp-card-head">
+                  <img src="./assets/logoes/antino_labs_logo.jpeg" alt="Antino Labs logo" class="exp-logo"
+                    onerror="this.style.display='none'" />
+                  <div class="exp-title-wrap">
+                    <div class="exp-role">Flutter Developer</div>
+                    <div class="exp-company">Antino Labs — Gurgaon, Haryana</div>
+                  </div>
+                  <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> June 2024 – Present</span>
+                  <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
+                </div>
+                <div class="exp-desc-collapse">
+                  <p class="exp-desc">
+                    Working on the client side of the <strong>NeoZap Fintech &amp; Payments</strong> product.
+                    Developing new features, implementing functional changes, optimizing codebase structure,
+                    and improving app performance — including faster load times, reduced bundle size by
+                    <strong>20%</strong>, and ensuring smooth user interactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="timeline-item reveal reveal-delay-1">
+              <div class="exp-card" id="exp-cqlsys" onclick="toggleExp('exp-cqlsys')">
+                <div class="exp-card-head">
+                  <img src="./assets/logoes/cqlsys.png" alt="Cqlsys Technologies logo" class="exp-logo"
+                    onerror="this.style.display='none'" />
+                  <div class="exp-title-wrap">
+                    <div class="exp-role">Software Developer (Flutter)</div>
+                    <div class="exp-company">Cqlsys Technologies — Mohali, Punjab</div>
+                  </div>
+                  <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> July 2023 – March 2024</span>
+                  <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
+                </div>
+                <div class="exp-desc-collapse">
+                  <p class="exp-desc">
+                    Led three distinct projects with full ownership, focusing on API integration, notification
+                    systems, payment gateway integration, real-time chat via WebSockets, bidding systems,
+                    tracking features, and authentication flows.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="timeline-item reveal reveal-delay-2">
+              <div class="exp-card" id="exp-nexever" onclick="toggleExp('exp-nexever')">
+                <div class="exp-card-head">
+                  <img src="./assets/logoes/nexever.png" alt="Nexever logo" class="exp-logo"
+                    onerror="this.style.display='none'" />
+                  <div class="exp-title-wrap">
+                    <div class="exp-role">Flutter Developer</div>
+                    <div class="exp-company">Nexever Pvt. Ltd — Mohali, Punjab</div>
+                  </div>
+                  <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> May 2022 – June 2023</span>
+                  <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
+                </div>
+                <div class="exp-desc-collapse">
+                  <p class="exp-desc">
+                    Executed 4–5 projects end-to-end, responsible for UI design, functionality, API
+                    integration, push notifications, real-time chat, payment gateway integration, and
+                    authentication within a collaborative team environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- Education Panel -->
+        <div id="panel-edu" class="exp-panel" role="tabpanel" aria-labelledby="tab-edu">
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="exp-card">
+                <div class="exp-card-head">
+                  <img src="./assets/logoes/kuk.png" alt="Kurukshetra University logo" class="exp-logo"
+                    onerror="this.style.display='none'" />
+                  <div class="exp-title-wrap">
+                    <div class="exp-role">B.Tech — Computer Science &amp; Engineering</div>
+                    <div class="exp-company">Kurukshetra University · Geeta Engineering College</div>
+                  </div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> Aug 2018 – May 2022</span>
+                  <span class="exp-location"><i class="fa-solid fa-graduation-cap"></i> Haryana, India</span>
+                </div>
+                <div class="exp-desc-collapse" style="max-height:200px">
+                  <p class="exp-desc">
+                    Completed Bachelor of Technology in Computer Science &amp; Engineering with focus on
+                    data structures, algorithms, software engineering, and mobile development fundamentals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+        PROJECTS SECTION
+   ====================================================== -->
+    <section id="projects" aria-label="Projects">
+      <div style="text-align:center;max-width:700px;margin:0 auto 4rem">
+        <div class="section-tag reveal" style="display:inline-flex">
+          <i class="fa-solid fa-code"></i> Portfolio
+        </div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0"></div>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin-top:1rem">
+          A collection of mobile &amp; web applications I've built — each crafted with performance,
+          scalability, and exceptional user experience in mind.
+        </p>
+      </div>
+
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Injected by JS -->
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+        CONTACT SECTION
+   ====================================================== -->
+    <section id="contact" aria-label="Contact">
+      <div class="contact-inner">
+        <div class="section-tag reveal" style="display:inline-flex">
+          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+        </div>
+        <div class="contact-card reveal reveal-delay-1">
+          <h2 class="section-title">
+            Ready to build something <span class="gradient-text">amazing?</span>
+          </h2>
+          <p
+            style="color:var(--clr-text-dim);margin-top:0.75rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75">
+            Whether you have a project in mind, need a Flutter wizard, or just want to say hello —
+            my inbox is always open. Let's make something great together!
+          </p>
+
+
+          <a href="mailto:pkumar.link@gmail.com" class="contact-email-link" id="contact-email-btn">
+            <i class="fa-solid fa-envelope"></i>
+            pkumar.link@gmail.com
+          </a>
+
+
+          <div class="contact-socials">
+            <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="contact-social-link"
+              aria-label="GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener"
+              class="contact-social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="contact-social-link"
+              aria-label="pub.dev">
+              <i class="fab fa-dart-lang"></i> pub.dev
+            </a>
+            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="contact-social-link"
+              aria-label="YouTube">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="contact-social-link"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======== FOOTER ======== -->
+    <footer role="contentinfo">
+      <div class="footer-copy">
+        © 2025 <span>Praween Kumar</span> — Built with ❤️ &amp; lots of ☕
+      </div>
+      <div class="footer-links">
+        <a href="#home" class="nav-scroll">Top</a>
+        <a href="#about" class="nav-scroll">About</a>
+        <a href="#projects" class="nav-scroll">Projects</a>
+        <a href="mailto:pkumar.link@gmail.com">Contact</a>
+      </div>
+    </footer>
+
+
+  </div><!-- /app-wrapper -->
+
+
+  <!-- ============================================================
+      DATA
+ ============================================================ -->
+  <script src="./js/data.js"></script>
+
+
+  <!-- ============================================================
+      MAIN SCRIPT
+ ============================================================ -->
+  <script>
+    /* ======= Loader ======= */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('hide');
+      }, 1800);
+    });
+
+
+    /* ======= Cursor Glow ======= */
+    const glow = document.getElementById('cursorGlow');
+    let glowX = 0, glowY = 0, curX = 0, curY = 0;
+    document.addEventListener('mousemove', e => { glowX = e.clientX; glowY = e.clientY; });
+    (function animGlow() {
+      curX += (glowX - curX) * 0.08;
+      curY += (glowY - curY) * 0.08;
+      glow.style.left = curX + 'px';
+      glow.style.top = curY + 'px';
+      requestAnimationFrame(animGlow);
+    })();
+
+
+    /* ======= Navbar scroll effect (merged into combined handler below) ======= */
+    const header = document.getElementById('header');
+
+
+    /* ======= Back to top ======= */
+    document.getElementById('back-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+
+    /* ======= Smooth scroll for all .nav-scroll ======= */
+    function setupSmoothScroll() {
+      document.querySelectorAll('.nav-scroll').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+          closeMobileMenu();
+        });
+      });
+    }
+
+
+    /* ======= Mobile menu ======= */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+    });
+
+
+    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', closeMobileMenu));
+
+
+    /* ======= Scroll Reveal ======= */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
         }
+      });
+    }, { threshold: 0.12 });
 
-        // Change the URL without the '#' symbol
-        history.pushState({}, document.title, window.location.pathname + window.location.search);
+
+    function initReveal() {
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    }
+
+
+    /* ======= Typed Role Animation ======= */
+    const roles = [
+      'Flutter Developer 📱',
+      'Node.js Developer 🌐',
+      'Next.js Developer 🌐',
+      'Full-Stack Developer 🛠️',
+    ];
+    let roleIdx = 0, charIdx = 0, deleting = false;
+    const typedEl = document.getElementById('typed-role');
+
+
+    function typeRole() {
+      const current = roles[roleIdx];
+      if (!deleting) {
+        typedEl.textContent = current.slice(0, ++charIdx);
+        typedEl.classList.add('typed-text');
+        if (charIdx === current.length) { deleting = true; setTimeout(typeRole, 1800); return; }
+      } else {
+        typedEl.textContent = current.slice(0, --charIdx);
+        if (charIdx === 0) {
+          deleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+          setTimeout(typeRole, 400); return;
+        }
+      }
+      setTimeout(typeRole, deleting ? 55 : 75);
+    }
+    setTimeout(typeRole, 2200);
+
+
+    /* ======= Experience Tabs ======= */
+    document.querySelectorAll('.exp-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.exp-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');
       });
     });
-  });
-</script>
 
-<script>
-  // Simulate page load delay
-  setTimeout(function () {
-    document.querySelector('.loader-wrapper').style.display = 'none';
-    document.querySelector('.content').style.display = 'block';
-  }, 2000); // 2 seconds delay
-</script>
+
+    /* ======= Expand/Collapse experience cards ======= */
+    function toggleExp(id) {
+      const card = document.getElementById(id);
+      card.classList.toggle('open');
+    }
+
+
+    /* ======= Build Project Cards ======= */
+    function stripHtml(html) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+
+    function buildProjectCards() {
+      const grid = document.getElementById('projects-grid');
+      if (!grid || typeof projectsData === 'undefined') return;
+
+
+      projectsData.forEach((proj, i) => {
+        const card = document.createElement('div');
+        card.className = 'project-card reveal';
+        if (i % 3 === 1) card.classList.add('reveal-delay-1');
+        if (i % 3 === 2) card.classList.add('reveal-delay-2');
+
+
+        const theme = proj.theme || { bg: 'var(--clr-surface-2)', icon: 'fa-rocket' };
+        const collageImages = (proj.images || []).filter(img => !img.includes('banner')).slice(0, 4);
+        const collageHtml = collageImages.length > 0
+          ? `<div class="project-collage">${collageImages.map(img => `<img src="${img}" class="collage-item" loading="lazy">`).join('')}</div>`
+          : `<div style="height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;">📱</div>`;
+
+
+        const bannerHtml = `
+         <div class="project-banner-bg banner-${proj.type || 'default'}" style="background: ${theme.bg}">
+           <i class="fa-solid ${theme.icon} theme-icon-overlay"></i>
+           ${collageHtml}
+         </div>
+       `;
+
+
+        const tags = (proj.key_points || []).map(t => `<span class="project-tag">${t}</span>`).join('');
+
+
+        const storeLinks = [
+          proj.android ? `<a href="${proj.android}" target="_blank" rel="noopener" class="store-btn"><i class="fab fa-google-play"></i> Play</a>` : '',
+          proj.ios ? `<a href="${proj.ios}"     target="_blank" rel="noopener" class="store-btn"><i class="fab fa-app-store-ios"></i> iOS</a>` : '',
+          proj.link ? `<a href="${proj.link}"    target="_blank" rel="noopener" class="store-btn"><i class="fa-solid fa-link"></i> Web</a>` : '',
+        ].join('');
+
+
+        card.innerHTML = `
+         <div class="project-img-wrap">
+           ${bannerHtml}
+           <div class="project-img-overlay"></div>
+           ${storeLinks ? `<div class="project-store-links">${storeLinks}</div>` : ''}
+         </div>
+         <div class="project-body">
+           <div class="project-name">${proj.name}</div>
+           <div class="project-platform"><i class="fa-solid fa-mobile-screen"></i> ${proj.sub_title}</div>
+           <p class="project-desc">${stripHtml(proj.about)}</p>
+           <div class="project-tags">${tags}</div>
+         </div>`;
+
+
+        /* Click opens lightbox if images exist */
+        if (proj.images && proj.images.length > 0) {
+          card.style.cursor = 'pointer';
+          card.addEventListener('click', (e) => {
+            if (e.target.closest('.store-btn')) return;
+            openLightbox(proj.images, 0);
+          });
+        }
+
+
+        grid.appendChild(card);
+      });
+
+
+      initReveal();
+    }
+
+
+    /* ======= Lightbox ======= */
+    let lbImages = [], lbIndex = 0;
+
+
+    function openLightbox(images, idx) {
+      lbImages = images;
+      lbIndex = idx;
+      updateLightbox();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+
+    function updateLightbox() {
+      document.getElementById('lightboxImg').src = lbImages[lbIndex];
+      document.getElementById('lightboxCounter').textContent = `${lbIndex + 1} / ${lbImages.length}`;
+    }
+
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => {
+      lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+      updateLightbox();
+    });
+    document.getElementById('lightboxNext').addEventListener('click', () => {
+      lbIndex = (lbIndex + 1) % lbImages.length;
+      updateLightbox();
+    });
+    document.getElementById('lightbox').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; updateLightbox(); }
+      if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; updateLightbox(); }
+    });
+
+
+    /* ======= Scroll Progress Bar ======= */
+    const progressBar = document.getElementById('scroll-progress');
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    }
+
+
+    /* ======= Active Nav Highlight ======= */
+    const sections = ['home', 'about', 'experience', 'projects', 'contact'];
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    function updateActiveNav() {
+      let current = 'home';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 120) current = id;
+      });
+      navAnchors.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }
+
+
+    /* ======= Particles Canvas ======= */
+    function initParticles() {
+      const canvas = document.getElementById('hero-particles');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let W, H, particles = [];
+
+
+      function resize() {
+        W = canvas.width = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
+
+
+      const COLORS = ['rgba(108,99,255,', 'rgba(0,212,255,', 'rgba(255,107,157,'];
+      for (let i = 0; i < 55; i++) {
+        particles.push({
+          x: Math.random() * 1200,
+          y: Math.random() * 800,
+          r: Math.random() * 1.8 + 0.4,
+          dx: (Math.random() - 0.5) * 0.35,
+          dy: (Math.random() - 0.5) * 0.35,
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
+          alpha: Math.random() * 0.5 + 0.15
+        });
+      }
+
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.color + p.alpha + ')';
+          ctx.fill();
+          p.x += p.dx;
+          p.y += p.dy;
+          if (p.x < 0) p.x = W;
+          if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H;
+          if (p.y > H) p.y = 0;
+        });
+        // Draw faint connection lines
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+            if (dist < 130) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = 'rgba(108,99,255,' + (0.06 * (1 - dist / 130)) + ')';
+              ctx.lineWidth = 0.7;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    }
+
+
+    /* ======= Combined scroll handler ======= */
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (header) header.classList.toggle('scrolled', window.scrollY > 20);
+      updateProgress();
+      updateActiveNav();
+    }, { passive: true });
+
+
+    /* ======= Init ======= */
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('header');
+      if (header) header.classList.toggle('scrolled', window.scrollY > 20);
+      setupSmoothScroll();
+      initReveal();
+      buildProjectCards();
+      initParticles();
+      updateActiveNav();
+    });
+  </script>
+
+
+</body>
 
 </html>
