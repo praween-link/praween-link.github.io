@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Praween Kumar — Flutter Developer with 4+ years experience building scalable cross-platform mobile apps, Node.js backends, and React.js frontends." />
-  <meta name="keywords"
-    content="Flutter Developer, Mobile App Developer, Node.js, React.js, Dart, Android, iOS, Praween Kumar" />
-  <meta property="og:title" content="Praween Kumar — Flutter Developer" />
-  <meta property="og:description" content="Building beautiful, performant mobile & web experiences." />
-  <title>Praween Kumar — Software Developer</title>
+  <meta name="description" content="Praween Kumar — Senior Software Engineer specializing in Flutter & Node.js. 4+ years building production mobile apps with 300K+ cumulative users. Open to Senior Flutter / Mobile Engineering roles." />
+  <meta name="keywords" content="Senior Flutter Developer, Mobile Engineer, Flutter, Dart, Node.js, TypeScript, Praween Kumar, Production Apps, Fintech, Android, iOS" />
+  <meta property="og:title" content="Praween Kumar — Senior Software Engineer · Flutter & Node.js" />
+  <meta property="og:description" content="Building scalable mobile products, production-grade APIs and experiences used by real users." />
+  <meta property="og:type" content="website" />
+  <title>Praween Kumar — Senior Software Engineer · Flutter & Node.js</title>
   <link rel="icon" href="./assets/p.png" type="image/png" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
-
 
 <body>
 
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-  <!-- ============ BACKGROUND ============ -->
+  <!-- ============ CURSOR GLOW ============ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ BACKGROUND ORBS ============ -->
   <div class="bg-orbs" aria-hidden="true">
     <div class="bg-orb bg-orb-1"></div>
     <div class="bg-orb bg-orb-2"></div>
     <div class="bg-orb bg-orb-3"></div>
   </div>
 
-
-  <!-- ============ SCROLL PROGRESS ============ -->
-  <div id="scroll-progress" aria-hidden="true"></div>
-
-
-  <!-- ============ CURSOR GLOW ============ -->
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-
   <!-- ============ LOADING SCREEN ============ -->
   <div id="loader" role="status" aria-label="Loading">
     <div class="loader-logo">PK</div>
-    <div class="loader-bar">
-      <div class="loader-bar-fill"></div>
-    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <div class="loader-tagline">Senior Software Engineer</div>
   </div>
-
 
   <!-- ============ BACK TO TOP ============ -->
   <button id="back-top" aria-label="Back to top" title="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
-
 
   <!-- ============ IMAGE LIGHTBOX ============ -->
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
@@ -69,34 +61,31 @@
     </div>
   </div>
 
-
   <!-- ============ APP WRAPPER ============ -->
   <div class="app-wrapper">
-
 
     <!-- ======== NAVBAR ======== -->
     <header id="header">
       <nav aria-label="Main navigation">
-        <a href="#home" class="nav-logo" id="nav-logo-link">
+        <a href="#home" class="nav-logo nav-scroll" id="nav-logo-link">
           <div class="nav-logo-icon">PK</div>
           <span>Praween Kumar</span>
         </a>
 
-
         <ul class="nav-links" id="nav-desktop-links">
           <li><a href="#home" class="nav-scroll">Home</a></li>
-          <li><a href="#about" class="nav-scroll">About</a></li>
+          <li><a href="#work" class="nav-scroll">Work</a></li>
+          <li><a href="#engineering" class="nav-scroll">Engineering</a></li>
           <li><a href="#experience" class="nav-scroll">Experience</a></li>
-          <li><a href="#projects" class="nav-scroll">Projects</a></li>
+          <li><a href="#about" class="nav-scroll">About</a></li>
           <li><a href="#contact" class="nav-scroll">Contact</a></li>
           <li>
             <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
-              target="_blank" rel="noopener" class="nav-cta">
+              target="_blank" rel="noopener" class="nav-cta" id="nav-resume-btn">
               <i class="fa-solid fa-file-arrow-down"></i>&nbsp; Resume
             </a>
           </li>
         </ul>
-
 
         <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -104,18 +93,18 @@
       </nav>
     </header>
 
-
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul>
         <li><a href="#home" class="nav-scroll mob-link">Home</a></li>
-        <li><a href="#about" class="nav-scroll mob-link">About</a></li>
+        <li><a href="#work" class="nav-scroll mob-link">Work</a></li>
+        <li><a href="#engineering" class="nav-scroll mob-link">Engineering</a></li>
         <li><a href="#experience" class="nav-scroll mob-link">Experience</a></li>
-        <li><a href="#projects" class="nav-scroll mob-link">Projects</a></li>
+        <li><a href="#about" class="nav-scroll mob-link">About</a></li>
         <li><a href="#contact" class="nav-scroll mob-link">Contact</a></li>
         <li>
           <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
-            target="_blank" rel="noopener" class="mob-link">
+            target="_blank" rel="noopener" class="mob-link nav-cta-mob">
             <i class="fa-solid fa-file-arrow-down"></i>&nbsp; Download Resume
           </a>
         </li>
@@ -124,80 +113,88 @@
 
 
     <!-- ======================================================
-        HERO SECTION
-   ====================================================== -->
+         HERO SECTION
+    ====================================================== -->
     <section id="home" aria-label="Hero">
-      <!-- Particle canvas -->
       <canvas id="hero-particles" aria-hidden="true"></canvas>
       <div class="hero-inner">
 
-
-        <!-- Left -->
+        <!-- Left content -->
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="dot"></span>
-            Available for work &amp; collaboration
+          <div class="hero-status-badge">
+            <span class="status-dot"></span>
+            Open to Senior Flutter &amp; Mobile Engineering roles
           </div>
-
 
           <h1 class="hero-title">
-            Hello! I'm,
-            <span class="name">Praween Kumar</span>
-            <span class="role" id="typed-role"></span>
+            <span class="hero-title-sub">Senior Software Engineer</span>
+            <span class="hero-name">Praween Kumar</span>
+            <span class="hero-role-line"><span id="typed-role"></span></span>
           </h1>
 
-
           <p class="hero-desc">
-            A passionate <strong>Flutter &amp; Full-Stack Developer</strong> with 4+ years of experience
-            crafting performant, scalable mobile &amp; web applications. Specializing in Flutter, Node.js, Dart,
-            and modern UI/UX engineering.
+            I build <strong>production-ready mobile applications</strong> with Flutter, scalable APIs with Node.js, and the engineering systems behind reliable digital products used by <strong>300K+ users</strong>.
           </p>
 
-
-          <div class="hero-actions">
-            <a href="#projects" class="btn-primary nav-scroll" id="hero-view-work-btn">
-              <i class="fa-solid fa-rocket"></i> View My Work
-            </a>
-            <a href="#contact" class="btn-secondary nav-scroll" id="hero-contact-btn">
-              <i class="fa-regular fa-envelope"></i> Get In Touch
-            </a>
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <div class="hero-metric-val">4+</div>
+              <div class="hero-metric-label">Years Experience</div>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric">
+              <div class="hero-metric-val">300K+</div>
+              <div class="hero-metric-label">Cumulative Users</div>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric">
+              <div class="hero-metric-val">10+</div>
+              <div class="hero-metric-label">Projects</div>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric">
+              <div class="hero-metric-val">Android &amp; iOS</div>
+              <div class="hero-metric-label">Production Apps</div>
+            </div>
           </div>
 
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary nav-scroll" id="hero-view-work-btn">
+              <i class="fa-solid fa-rocket"></i> View My Work
+            </a>
+            <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
+              target="_blank" rel="noopener" class="btn-secondary" id="hero-resume-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener"
+              class="btn-outline" id="hero-linkedin-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
 
           <div class="hero-socials">
             <span>Find me on</span>
-            <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="social-pill"
-              aria-label="GitHub" title="GitHub">
+            <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener" class="social-pill"
-              aria-label="LinkedIn" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener" class="social-pill" aria-label="LinkedIn">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="social-pill"
-              aria-label="pub.dev" title="pub.dev">
+            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="social-pill" aria-label="pub.dev">
               <i class="fab fa-dart-lang"></i>
             </a>
-            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="social-pill"
-              aria-label="YouTube" title="YouTube">
+            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="social-pill" aria-label="YouTube">
               <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="social-pill"
-              aria-label="Instagram" title="Instagram">
-              <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
 
-
-        <!-- Right -->
+        <!-- Right visual -->
         <div class="hero-visual">
           <div class="profile-card">
             <div class="profile-ring"></div>
             <div class="profile-ring-2"></div>
 
-
-            <!-- Floating tech badges -->
             <div class="floating-badge floating-badge-1" aria-hidden="true">
               <i class="fab fa-dart-lang" style="color:#00d4ff"></i> Flutter
             </div>
@@ -208,21 +205,18 @@
               ⚡ 4+ Years Exp
             </div>
             <div class="floating-badge floating-badge-4" aria-hidden="true">
-              <i class="fa-solid fa-bolt" style="color:#ffffff"></i> Next.js
+              🏆 300K+ Users
             </div>
 
-
-            <!-- Avatar -->
             <div class="profile-avatar-wrap">
-              <img src="./assets/my_profile_img.jpeg" alt="Praween Kumar profile photo" class="profile-avatar"
-                id="hero-avatar" />
+              <img src="./assets/my_profile_img.jpeg" alt="Praween Kumar profile photo"
+                class="profile-avatar" id="hero-avatar" />
             </div>
 
-
-            <!-- Info card -->
             <div class="profile-info-card">
               <div class="profile-name">Praween Kumar</div>
-              <div class="profile-role-badge">Flutter &amp; Full-Stack Developer</div>
+              <div class="profile-role-badge">Senior Software Engineer</div>
+              <div class="profile-sub-role">Flutter · Node.js · Mobile</div>
               <div class="profile-stats">
                 <div class="stat-item">
                   <div class="stat-num">4+</div>
@@ -233,112 +227,431 @@
                   <div class="stat-label">Projects</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-num">5+</div>
-                  <div class="stat-label">Live Apps</div>
+                  <div class="stat-num">300K+</div>
+                  <div class="stat-label">Users</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-
       </div>
     </section>
 
 
     <!-- ======================================================
-        ABOUT SECTION
-   ====================================================== -->
-    <section id="about" aria-label="About Me">
-      <div class="about-grid">
-
-
-        <!-- Left: Text & Skills -->
-        <div class="about-text">
-          <div class="section-tag reveal">
-            <i class="fa-solid fa-user"></i> About Me
-          </div>
-          <h2 class="section-title reveal reveal-delay-1">
-            Crafting Digital <span class="gradient-text">Experiences</span>
-          </h2>
-          <div class="section-divider reveal reveal-delay-2"></div>
-
-
-          <p class="reveal reveal-delay-2">
-            I'm a Software Developer with <strong>4+ years of experience</strong> specializing in Flutter
-            for cross-platform mobile app development, along with solid backend skills in Node.js &amp; Mongoose,
-            and frontend expertise in React.js.
-          </p>
-          <p class="reveal reveal-delay-3">
-            I focus on delivering performant, scalable, and user-centric applications. With hands-on experience
-            in fintech solutions like <strong>NeoZap</strong>, I've contributed to secure onboarding systems,
-            feature-rich UI, optimized architecture, and seamless third-party integrations.
-          </p>
-
-
-          <div class="skills-grid reveal reveal-delay-3">
-            <div class="skill-chip"><span class="skill-dot" style="background:#00d4ff"></span>Flutter</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#000000"></span>Next.js</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#8cc84b"></span>Node.js</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#0175c2"></span>Dart</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#f7df1e"></span>JavaScript</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#61dafb"></span>React.js</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#47a248"></span>MongoDB</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#f05032"></span>Git</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#e34c26"></span>HTML / CSS</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#b07219"></span>Java</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#7952b3"></span>Bootstrap</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#6c63ff"></span>REST APIs</div>
-            <div class="skill-chip"><span class="skill-dot" style="background:#ff6b9d"></span>WebSockets</div>
-          </div>
-        </div>
-
-
-        <!-- Right: Stat Cards -->
-        <div class="about-stats reveal reveal-delay-2">
-          <div class="stat-card">
-            <div class="stat-card-icon">🚀</div>
-            <div class="stat-card-num">4+</div>
-            <div class="stat-card-label">Years of Experience</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-card-icon">📱</div>
-            <div class="stat-card-num">10+</div>
-            <div class="stat-card-label">Projects Delivered</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-card-icon">🔥</div>
-            <div class="stat-card-num">5+</div>
-            <div class="stat-card-label">Live Apps on Stores</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-card-icon">⚡</div>
-            <div class="stat-card-num">20%</div>
-            <div class="stat-card-label">App Size Reduced (NeoZap)</div>
-          </div>
-          <div class="stat-card stat-card-wide">
-            <div class="stat-card-icon">🎓</div>
-            <div class="stat-card-num">B.Tech CSE</div>
-            <div class="stat-card-label">Kurukshetra University · 2018 – 2022</div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <!-- ======================================================
-        EXPERIENCE SECTION
-   ====================================================== -->
-    <section id="experience" aria-label="Experience and Education">
-      <div style="max-width:900px;margin:0 auto">
-        <div class="section-tag reveal"><i class="fa-solid fa-briefcase"></i> Career</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          My <span class="gradient-text">Journey</span>
-        </h2>
+         WHAT I BUILD — OUTCOME-FOCUSED
+    ====================================================== -->
+    <section id="what-i-build" aria-label="What I Build">
+      <div class="section-container">
+        <div class="section-tag reveal"><i class="fa-solid fa-cubes"></i> Capabilities</div>
+        <h2 class="section-title reveal reveal-delay-1">What I <span class="gradient-text">Build</span></h2>
         <div class="section-divider reveal reveal-delay-2"></div>
 
+        <div class="build-grid">
+          <div class="build-card reveal">
+            <div class="build-card-icon" style="background: linear-gradient(135deg,#6c63ff22,#00d4ff22)">
+              <i class="fa-solid fa-mobile-screen" style="color:#00d4ff"></i>
+            </div>
+            <h3>Production Mobile Apps</h3>
+            <p>Cross-platform mobile applications using Flutter with scalable architecture, state management (BLoC/Cubit/GetX), API integrations and production monitoring.</p>
+            <div class="build-tags">
+              <span>Flutter</span><span>Dart</span><span>BLoC</span><span>Clean Architecture</span>
+            </div>
+          </div>
+
+          <div class="build-card reveal reveal-delay-1">
+            <div class="build-card-icon" style="background: linear-gradient(135deg,#8cc84b22,#00d4ff22)">
+              <i class="fa-solid fa-server" style="color:#8cc84b"></i>
+            </div>
+            <h3>Backend &amp; APIs</h3>
+            <p>REST APIs and backend services using Node.js, TypeScript, MongoDB and AWS — designed for performance, reliability and real-world scale.</p>
+            <div class="build-tags">
+              <span>Node.js</span><span>TypeScript</span><span>MongoDB</span><span>AWS</span>
+            </div>
+          </div>
+
+          <div class="build-card reveal reveal-delay-2">
+            <div class="build-card-icon" style="background: linear-gradient(135deg,#ff6b9d22,#6c63ff22)">
+              <i class="fa-solid fa-layer-group" style="color:#ff6b9d"></i>
+            </div>
+            <h3>Product Engineering</h3>
+            <p>From feature development and architecture to Play Store / App Store releases, performance optimization and production debugging — end-to-end ownership.</p>
+            <div class="build-tags">
+              <span>Architecture</span><span>Play Store</span><span>App Store</span><span>Ownership</span>
+            </div>
+          </div>
+
+          <div class="build-card reveal reveal-delay-1">
+            <div class="build-card-icon" style="background: linear-gradient(135deg,#ffd16622,#ff6b9d22)">
+              <i class="fa-solid fa-gauge-high" style="color:#ffd166"></i>
+            </div>
+            <h3>Performance &amp; Reliability</h3>
+            <p>Improving startup time, APK size, crash rates, onboarding flows and overall user experience through systematic investigation, optimization and monitoring.</p>
+            <div class="build-tags">
+              <span>Crashlytics</span><span>Optimization</span><span>Monitoring</span><span>Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         ENGINEERING IMPACT
+    ====================================================== -->
+    <section id="impact" aria-label="Engineering Impact">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-solid fa-bolt"></i> Impact</div>
+        <h2 class="section-title reveal reveal-delay-1">Engineering <span class="gradient-text">Impact</span></h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+        <p class="section-subtitle reveal reveal-delay-2">This is what the work actually produced.</p>
+
+        <div class="impact-grid">
+          <div class="impact-card reveal">
+            <div class="impact-number">40%</div>
+            <div class="impact-label">Reduced APK size &amp; startup overhead</div>
+            <div class="impact-context">NeoZap · Antino Labs</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-1">
+            <div class="impact-number">95%</div>
+            <div class="impact-label">Onboarding quality improvement</div>
+            <div class="impact-context">NeoZap · Antino Labs</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-2">
+            <div class="impact-number">100K+</div>
+            <div class="impact-label">Users on a production fintech platform</div>
+            <div class="impact-context">NeoZap · Antino Labs</div>
+          </div>
+          <div class="impact-card reveal">
+            <div class="impact-number">200K+</div>
+            <div class="impact-label">Users on a trading platform</div>
+            <div class="impact-context">Rupeezy · Antino Labs</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-1">
+            <div class="impact-number">~Zero</div>
+            <div class="impact-label">Critical production crashes after fix cycle</div>
+            <div class="impact-context">NeoZap · Antino Labs</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-2">
+            <div class="impact-number">4 Eng.</div>
+            <div class="impact-label">Mentored through reviews &amp; technical guidance</div>
+            <div class="impact-context">Antino Labs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         FEATURED PROJECTS (WORK)
+    ====================================================== -->
+    <section id="work" aria-label="Featured Projects">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-solid fa-briefcase"></i> Portfolio</div>
+        <h2 class="section-title reveal reveal-delay-1">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+        <p class="section-subtitle reveal reveal-delay-2">Production apps with real users and measurable impact.</p>
+
+        <div id="featured-projects-container"></div>
+
+        <!-- All Projects Toggle -->
+        <div style="text-align:center;margin-top:3rem">
+          <button class="btn-outline-full reveal" id="toggle-all-projects-btn" onclick="toggleAllProjects()">
+            <i class="fa-solid fa-th-large"></i> View All Projects
+          </button>
+        </div>
+
+        <!-- All Projects Grid (hidden by default) -->
+        <div id="all-projects-section" style="display:none;margin-top:3rem">
+          <h3 style="text-align:center;color:var(--clr-text-dim);margin-bottom:2rem;font-size:1.1rem">All Projects</h3>
+          <div class="projects-grid" id="all-projects-grid"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         TRAVNECT DEEP-DIVE
+    ====================================================== -->
+    <section id="travnect-case" aria-label="Travnect Case Study">
+      <div class="section-container">
+        <div class="travnect-hero">
+          <div class="travnect-badge">
+            <i class="fa-solid fa-star"></i> Founder Project · End-to-End Ownership
+          </div>
+          <h2 class="travnect-title">
+            <span class="travnect-logo-text">Travnect</span>
+          </h2>
+          <p class="travnect-tagline">Connect. Explore. Together.</p>
+          <p class="travnect-desc">
+            A travel discovery and travel companion platform that helps people map their journeys, document travel memories, plan future adventures, and find travelers who share the same destination and travel style.
+          </p>
+          <div class="travnect-actions">
+            <a href="https://travnect.com" target="_blank" rel="noopener" class="btn-primary" id="travnect-website-btn">
+              <i class="fa-solid fa-globe"></i> Visit travnect.com
+            </a>
+            <a href="#contact" class="btn-secondary nav-scroll" id="travnect-contact-btn">
+              <i class="fa-regular fa-envelope"></i> Ask About This
+            </a>
+          </div>
+        </div>
+
+        <!-- Travnect App Screenshots -->
+        <div class="travnect-screenshots">
+          <div class="travnect-screen reveal">
+            <img src="assets/project/travnect/travnect_1.png" alt="Travnect - Find travelers heading your way" onerror="this.parentElement.style.display='none'" />
+          </div>
+          <div class="travnect-screen reveal reveal-delay-1">
+            <img src="assets/project/travnect/travnect_2.png" alt="Travnect - Discover travelers near you" onerror="this.parentElement.style.display='none'" />
+          </div>
+          <div class="travnect-screen reveal reveal-delay-2">
+            <img src="assets/project/travnect/travnect_3.png" alt="Travnect - Map every place you've been" onerror="this.parentElement.style.display='none'" />
+          </div>
+          <div class="travnect-screen reveal">
+            <img src="assets/project/travnect/travnect_4.png" alt="Travnect - Search places and trips" onerror="this.parentElement.style.display='none'" />
+          </div>
+          <div class="travnect-screen reveal reveal-delay-1">
+            <img src="assets/project/travnect/travnect_5.png" alt="Travnect - Home screen with travel matching" onerror="this.parentElement.style.display='none'" />
+          </div>
+        </div>
+
+        <!-- Features grid -->
+        <div class="travnect-features">
+          <div class="travnect-feature reveal">
+            <div class="travnect-feature-icon">🗺️</div>
+            <h4>Map Your Journey</h4>
+            <p>Personal travel globe with visited places, photos, activities and memories pinned by location.</p>
+          </div>
+          <div class="travnect-feature reveal reveal-delay-1">
+            <div class="travnect-feature-icon">🤝</div>
+            <h4>Find Travel Companions</h4>
+            <p>Smart matching based on travel style, visited places, future plans, location and preferences.</p>
+          </div>
+          <div class="travnect-feature reveal reveal-delay-2">
+            <div class="travnect-feature-icon">🏕️</div>
+            <h4>Create &amp; Discover Trips</h4>
+            <p>Create structured trips with destination, dates, activities and vehicle. Others can discover and join.</p>
+          </div>
+          <div class="travnect-feature reveal">
+            <div class="travnect-feature-icon">💬</div>
+            <h4>Connect &amp; Chat</h4>
+            <p>1:1 and group conversations. Real-time communication via Socket.io with push notifications.</p>
+          </div>
+          <div class="travnect-feature reveal reveal-delay-1">
+            <div class="travnect-feature-icon">📸</div>
+            <h4>Travel Stories</h4>
+            <p>Share your journey experiences and travel stories within the Travnect community.</p>
+          </div>
+          <div class="travnect-feature reveal reveal-delay-2">
+            <div class="travnect-feature-icon">🔮</div>
+            <h4>Future Bucket List</h4>
+            <p>Save future destinations and discover people planning similar journeys — connect before you travel.</p>
+          </div>
+        </div>
+
+        <!-- Tech stack -->
+        <div class="travnect-tech reveal">
+          <h3>Built With</h3>
+          <div class="travnect-tech-grid">
+            <div class="travnect-tech-group">
+              <div class="travnect-tech-label">Mobile</div>
+              <div class="travnect-tech-chips">
+                <span>Flutter</span><span>Dart</span><span>BLoC/Cubit</span><span>Clean Architecture</span>
+              </div>
+            </div>
+            <div class="travnect-tech-group">
+              <div class="travnect-tech-label">Backend</div>
+              <div class="travnect-tech-chips">
+                <span>Node.js</span><span>TypeScript</span><span>MongoDB</span><span>Socket.io</span>
+              </div>
+            </div>
+            <div class="travnect-tech-group">
+              <div class="travnect-tech-label">Cloud</div>
+              <div class="travnect-tech-chips">
+                <span>AWS EC2</span><span>Nginx</span><span>PM2</span><span>Firebase</span>
+              </div>
+            </div>
+            <div class="travnect-tech-group">
+              <div class="travnect-tech-label">Maps &amp; Real-time</div>
+              <div class="travnect-tech-chips">
+                <span>Map APIs</span><span>Location</span><span>FCM</span><span>WebSockets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture diagram -->
+        <div class="travnect-arch reveal">
+          <h3>Architecture</h3>
+          <div class="arch-diagram">
+            <div class="arch-layer arch-mobile">
+              <div class="arch-layer-title"><i class="fa-solid fa-mobile-screen"></i> Flutter App</div>
+              <div class="arch-layer-chips"><span>BLoC State</span><span>Clean Architecture</span><span>Map UI</span></div>
+            </div>
+            <div class="arch-arrows">
+              <div class="arch-arrow">REST APIs</div>
+              <div class="arch-arrow">WebSockets</div>
+            </div>
+            <div class="arch-layer arch-backend">
+              <div class="arch-layer-title"><i class="fa-brands fa-node-js"></i> Node.js API</div>
+              <div class="arch-layer-chips"><span>TypeScript</span><span>Express</span><span>Socket.io</span></div>
+            </div>
+            <div class="arch-arrows arch-arrows-split">
+              <div class="arch-split-arrow">MongoDB</div>
+              <div class="arch-split-arrow">Firebase</div>
+              <div class="arch-split-arrow">Map Services</div>
+            </div>
+            <div class="arch-bottom">
+              <div class="arch-layer arch-data"><span>User Data &amp; Trips</span></div>
+              <div class="arch-layer arch-data"><span>Push Notifications</span></div>
+              <div class="arch-layer arch-data"><span>Places &amp; Location</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- My role -->
+        <div class="travnect-role reveal">
+          <h3>My Role</h3>
+          <p class="travnect-role-desc">Travnect is an end-to-end product engineering project. I worked across product ideation, UX design, Flutter application development, backend architecture, REST API development, database design, real-time communication, matching logic, map integration, authentication, push notifications, cloud infrastructure, deployment and performance optimization.</p>
+          <div class="travnect-role-chips">
+            <span>Product Ideation</span>
+            <span>UX Design</span>
+            <span>Flutter App</span>
+            <span>Backend API</span>
+            <span>Database Design</span>
+            <span>Matching Logic</span>
+            <span>Real-time Chat</span>
+            <span>Maps Integration</span>
+            <span>AWS Deployment</span>
+            <span>Performance Optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         ENGINEERING CASE STUDIES
+    ====================================================== -->
+    <section id="engineering" aria-label="Engineering Case Studies">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-solid fa-flask"></i> Case Studies</div>
+        <h2 class="section-title reveal reveal-delay-1">Engineering <span class="gradient-text">Case Studies</span></h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+        <p class="section-subtitle reveal reveal-delay-2">How I diagnose problems, investigate root causes, and ship fixes that last.</p>
+
+        <div id="case-studies-container"></div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         TECHNICAL SKILLS
+    ====================================================== -->
+    <section id="skills" aria-label="Technical Skills">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-solid fa-microchip"></i> Skills</div>
+        <h2 class="section-title reveal reveal-delay-1">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+
+        <div class="skills-sections">
+          <div class="skills-group reveal">
+            <div class="skills-group-label">
+              <i class="fa-solid fa-mobile-screen"></i> Mobile
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new primary">Flutter</span>
+              <span class="skill-chip-new primary">Dart</span>
+              <span class="skill-chip-new primary">BLoC</span>
+              <span class="skill-chip-new primary">Cubit</span>
+              <span class="skill-chip-new primary">GetX</span>
+              <span class="skill-chip-new primary">Clean Architecture</span>
+              <span class="skill-chip-new primary">MVVM</span>
+            </div>
+          </div>
+
+          <div class="skills-group reveal reveal-delay-1">
+            <div class="skills-group-label">
+              <i class="fa-brands fa-node-js"></i> Backend
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new secondary">Node.js</span>
+              <span class="skill-chip-new secondary">TypeScript</span>
+              <span class="skill-chip-new secondary">Express.js</span>
+              <span class="skill-chip-new secondary">MongoDB</span>
+              <span class="skill-chip-new secondary">Mongoose</span>
+              <span class="skill-chip-new secondary">REST APIs</span>
+              <span class="skill-chip-new secondary">Socket.io</span>
+            </div>
+          </div>
+
+          <div class="skills-group reveal reveal-delay-2">
+            <div class="skills-group-label">
+              <i class="fa-brands fa-aws"></i> Cloud &amp; DevOps
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new tertiary">AWS EC2</span>
+              <span class="skill-chip-new tertiary">Nginx</span>
+              <span class="skill-chip-new tertiary">PM2</span>
+              <span class="skill-chip-new tertiary">Firebase</span>
+              <span class="skill-chip-new tertiary">CI/CD</span>
+              <span class="skill-chip-new tertiary">Git</span>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <div class="skills-group-label">
+              <i class="fa-solid fa-plug"></i> Integrations
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new quart">FCM</span>
+              <span class="skill-chip-new quart">Maps APIs</span>
+              <span class="skill-chip-new quart">Payments</span>
+              <span class="skill-chip-new quart">WebSockets</span>
+              <span class="skill-chip-new quart">Analytics</span>
+              <span class="skill-chip-new quart">Crashlytics</span>
+            </div>
+          </div>
+
+          <div class="skills-group reveal reveal-delay-1">
+            <div class="skills-group-label">
+              <i class="fa-brands fa-react"></i> Web
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new">React.js</span>
+              <span class="skill-chip-new">Next.js</span>
+              <span class="skill-chip-new">JavaScript</span>
+              <span class="skill-chip-new">HTML</span>
+              <span class="skill-chip-new">CSS</span>
+            </div>
+          </div>
+
+          <div class="skills-group reveal reveal-delay-2">
+            <div class="skills-group-label">
+              <i class="fa-solid fa-brain"></i> Engineering
+            </div>
+            <div class="skills-chips">
+              <span class="skill-chip-new">Architecture</span>
+              <span class="skill-chip-new">Performance</span>
+              <span class="skill-chip-new">Code Reviews</span>
+              <span class="skill-chip-new">Debugging</span>
+              <span class="skill-chip-new">Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         EXPERIENCE
+    ====================================================== -->
+    <section id="experience" aria-label="Experience">
+      <div class="section-container" style="max-width:880px">
+        <div class="section-tag reveal"><i class="fa-solid fa-briefcase"></i> Career</div>
+        <h2 class="section-title reveal reveal-delay-1">My <span class="gradient-text">Experience</span></h2>
+        <div class="section-divider reveal reveal-delay-2"></div>
 
         <!-- Tab switcher -->
         <div class="exp-tabs reveal reveal-delay-2" role="tablist">
@@ -350,11 +663,9 @@
           </button>
         </div>
 
-
         <!-- Work Panel -->
         <div id="panel-work" class="exp-panel active" role="tabpanel" aria-labelledby="tab-work">
           <div class="timeline">
-
 
             <div class="timeline-item reveal">
               <div class="exp-card" id="exp-antino" onclick="toggleExp('exp-antino')">
@@ -362,26 +673,29 @@
                   <img src="./assets/logoes/antino_labs_logo.jpeg" alt="Antino Labs logo" class="exp-logo"
                     onerror="this.style.display='none'" />
                   <div class="exp-title-wrap">
-                    <div class="exp-role">Flutter Developer</div>
-                    <div class="exp-company">Antino Labs — Gurgaon, Haryana</div>
+                    <div class="exp-role">Senior Software Engineer — Flutter</div>
+                    <div class="exp-company">Antino Labs · Gurgaon, Haryana</div>
                   </div>
                   <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
                 </div>
                 <div class="exp-meta">
-                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> June 2024 – Present</span>
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> Jun 2024 – Aug 2026</span>
                   <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
+                  <span class="exp-badge">Current</span>
                 </div>
                 <div class="exp-desc-collapse">
-                  <p class="exp-desc">
-                    Working on the client side of the <strong>NeoZap Fintech &amp; Payments</strong> product.
-                    Developing new features, implementing functional changes, optimizing codebase structure,
-                    and improving app performance — including faster load times, reduced bundle size by
-                    <strong>20%</strong>, and ensuring smooth user interactions.
-                  </p>
+                  <ul class="exp-bullets">
+                    <li>Built and maintained production Flutter applications across fintech and payment workflows (NeoZap, Rupeezy)</li>
+                    <li>Delivered features used by <strong>300K+ cumulative users</strong> across fintech and trading platforms</li>
+                    <li>Improved application performance, startup experience and APK size by <strong>40%</strong></li>
+                    <li>Reduced critical production crashes from 10+ to near-zero through systematic Crashlytics debugging</li>
+                    <li>Improved onboarding quality from ~35% to <strong>95%</strong> through UX and validation improvements</li>
+                    <li>Mentored <strong>4 engineers</strong> through code reviews and technical guidance</li>
+                    <li>Contributed to architecture decisions and product engineering across fintech domains</li>
+                  </ul>
                 </div>
               </div>
             </div>
-
 
             <div class="timeline-item reveal reveal-delay-1">
               <div class="exp-card" id="exp-cqlsys" onclick="toggleExp('exp-cqlsys')">
@@ -389,25 +703,25 @@
                   <img src="./assets/logoes/cqlsys.png" alt="Cqlsys Technologies logo" class="exp-logo"
                     onerror="this.style.display='none'" />
                   <div class="exp-title-wrap">
-                    <div class="exp-role">Software Developer (Flutter)</div>
-                    <div class="exp-company">Cqlsys Technologies — Mohali, Punjab</div>
+                    <div class="exp-role">Software Developer — Flutter</div>
+                    <div class="exp-company">CQLsys Technologies · Mohali, Punjab</div>
                   </div>
                   <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
                 </div>
                 <div class="exp-meta">
-                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> July 2023 – March 2024</span>
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> Jul 2023 – Mar 2024</span>
                   <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
                 </div>
                 <div class="exp-desc-collapse">
-                  <p class="exp-desc">
-                    Led three distinct projects with full ownership, focusing on API integration, notification
-                    systems, payment gateway integration, real-time chat via WebSockets, bidding systems,
-                    tracking features, and authentication flows.
-                  </p>
+                  <ul class="exp-bullets">
+                    <li>Led <strong>3 production applications</strong> with full ownership from development to deployment</li>
+                    <li>Implemented complex features: payment gateways, WebSocket real-time chat, bidding systems</li>
+                    <li>Built authentication flows, tracking features, and notification systems across projects</li>
+                    <li>Delivered complete API integrations for marketplace, language learning, and gig-economy apps</li>
+                  </ul>
                 </div>
               </div>
             </div>
-
 
             <div class="timeline-item reveal reveal-delay-2">
               <div class="exp-card" id="exp-nexever" onclick="toggleExp('exp-nexever')">
@@ -416,28 +730,27 @@
                     onerror="this.style.display='none'" />
                   <div class="exp-title-wrap">
                     <div class="exp-role">Flutter Developer</div>
-                    <div class="exp-company">Nexever Pvt. Ltd — Mohali, Punjab</div>
+                    <div class="exp-company">NexEver Pvt. Ltd · Mohali, Punjab</div>
                   </div>
                   <i class="fa-solid fa-chevron-down exp-toggle-icon"></i>
                 </div>
                 <div class="exp-meta">
-                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> May 2022 – June 2023</span>
+                  <span class="exp-date"><i class="fa-regular fa-calendar"></i> May 2022 – Jun 2023</span>
                   <span class="exp-location"><i class="fa-solid fa-location-dot"></i> On-site</span>
                 </div>
                 <div class="exp-desc-collapse">
-                  <p class="exp-desc">
-                    Executed 4–5 projects end-to-end, responsible for UI design, functionality, API
-                    integration, push notifications, real-time chat, payment gateway integration, and
-                    authentication within a collaborative team environment.
-                  </p>
+                  <ul class="exp-bullets">
+                    <li>Executed <strong>4–5 applications</strong> end-to-end with complete feature ownership</li>
+                    <li>Responsible for UI design, API integration, push notifications, real-time chat and authentication</li>
+                    <li>Integrated payment gateways across multiple consumer-facing applications</li>
+                    <li>Built core engineering skills across mobile architecture, state management, and API communication</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-
           </div>
         </div>
-
 
         <!-- Education Panel -->
         <div id="panel-edu" class="exp-panel" role="tabpanel" aria-labelledby="tab-edu">
@@ -455,92 +768,194 @@
                 <div class="exp-meta">
                   <span class="exp-date"><i class="fa-regular fa-calendar"></i> Aug 2018 – May 2022</span>
                   <span class="exp-location"><i class="fa-solid fa-graduation-cap"></i> Haryana, India</span>
+                  <span class="exp-badge edu-badge">8.3 CGPA</span>
                 </div>
                 <div class="exp-desc-collapse" style="max-height:200px">
-                  <p class="exp-desc">
-                    Completed Bachelor of Technology in Computer Science &amp; Engineering with focus on
-                    data structures, algorithms, software engineering, and mobile development fundamentals.
-                  </p>
+                  <p class="exp-desc">Completed Bachelor of Technology in Computer Science &amp; Engineering with focus on data structures, algorithms, software engineering, and mobile development fundamentals.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-
       </div>
     </section>
 
 
     <!-- ======================================================
-        PROJECTS SECTION
-   ====================================================== -->
-    <section id="projects" aria-label="Projects">
-      <div style="text-align:center;max-width:700px;margin:0 auto 4rem">
-        <div class="section-tag reveal" style="display:inline-flex">
-          <i class="fa-solid fa-code"></i> Portfolio
+         HOW I WORK
+    ====================================================== -->
+    <section id="approach" aria-label="Engineering Approach">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-solid fa-compass"></i> Approach</div>
+        <h2 class="section-title reveal reveal-delay-1">My Engineering <span class="gradient-text">Approach</span></h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+
+        <div class="approach-grid">
+          <div class="approach-step reveal">
+            <div class="approach-num">01</div>
+            <div class="approach-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Understand</h3>
+            <p>Understand the product, users and technical constraints before writing a single line of code.</p>
+          </div>
+          <div class="approach-connector" aria-hidden="true"></div>
+          <div class="approach-step reveal reveal-delay-1">
+            <div class="approach-num">02</div>
+            <div class="approach-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+            <h3>Architect</h3>
+            <p>Choose maintainable architecture and clear separation of responsibilities that scale with the team.</p>
+          </div>
+          <div class="approach-connector" aria-hidden="true"></div>
+          <div class="approach-step reveal reveal-delay-2">
+            <div class="approach-num">03</div>
+            <div class="approach-icon"><i class="fa-solid fa-hammer"></i></div>
+            <h3>Build</h3>
+            <p>Develop reusable, testable and production-ready features with clean, readable code.</p>
+          </div>
+          <div class="approach-connector" aria-hidden="true"></div>
+          <div class="approach-step reveal">
+            <div class="approach-num">04</div>
+            <div class="approach-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <h3>Measure</h3>
+            <p>Monitor performance, crashes and real-world behavior with Crashlytics, analytics and logging.</p>
+          </div>
+          <div class="approach-connector" aria-hidden="true"></div>
+          <div class="approach-step reveal reveal-delay-1">
+            <div class="approach-num">05</div>
+            <div class="approach-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3>Improve</h3>
+            <p>Continuously optimize the product based on real data, user feedback and production insights.</p>
+          </div>
         </div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Featured <span class="gradient-text">Projects</span>
-        </h2>
-        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0"></div>
-        <p class="section-subtitle reveal reveal-delay-2" style="margin-top:1rem">
-          A collection of mobile &amp; web applications I've built — each crafted with performance,
-          scalability, and exceptional user experience in mind.
-        </p>
-      </div>
-
-
-      <div class="projects-grid" id="projects-grid">
-        <!-- Injected by JS -->
       </div>
     </section>
 
 
     <!-- ======================================================
-        CONTACT SECTION
-   ====================================================== -->
+         OPEN SOURCE
+    ====================================================== -->
+    <section id="opensource" aria-label="Open Source">
+      <div class="section-container">
+        <div class="section-tag reveal" style="display:inline-flex"><i class="fa-brands fa-github"></i> Open Source</div>
+        <h2 class="section-title reveal reveal-delay-1"><span class="gradient-text">Open Source</span> Work</h2>
+        <div class="section-divider reveal reveal-delay-2" style="margin:1rem auto 0.75rem"></div>
+        <p class="section-subtitle reveal reveal-delay-2">Flutter packages published on pub.dev — building in public beyond employment.</p>
+
+        <div class="oss-grid" id="oss-grid"></div>
+
+        <div style="text-align:center;margin-top:2rem" class="reveal">
+          <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="btn-outline">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="btn-outline">
+            <i class="fab fa-dart-lang"></i> pub.dev Publisher
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         ABOUT
+    ====================================================== -->
+    <section id="about" aria-label="About">
+      <div class="section-container" style="max-width:920px">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-tag reveal"><i class="fa-solid fa-user"></i> About Me</div>
+            <h2 class="section-title reveal reveal-delay-1">The Person <span class="gradient-text">Behind the Code</span></h2>
+            <div class="section-divider reveal reveal-delay-2"></div>
+
+            <p class="reveal reveal-delay-2">
+              I'm a <strong>Senior Software Engineer</strong> with 4+ years of experience specializing in Flutter for cross-platform mobile development, Node.js for backend services, and the engineering systems that make production applications reliable.
+            </p>
+            <p class="reveal reveal-delay-3">
+              My focus is on <strong>engineering impact</strong> — not just writing features, but improving products. I care about startup time, crash rates, onboarding completion, and the experiences of real users. I've contributed to fintech platforms serving 100K+ users and trading apps used by 200K+ people.
+            </p>
+            <p class="reveal reveal-delay-3">
+              Outside of employment, I'm building <strong>Travnect</strong> — a travel companion platform — end-to-end, which has taught me to think beyond individual features and consider the full product lifecycle.
+            </p>
+
+            <div class="about-links reveal reveal-delay-3">
+              <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="social-pill">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener" class="social-pill">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="social-pill">
+                <i class="fab fa-dart-lang"></i>
+              </a>
+              <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="social-pill">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="social-pill">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-stats reveal reveal-delay-2">
+            <div class="stat-card"><div class="stat-card-icon">🚀</div><div class="stat-card-num">4+</div><div class="stat-card-label">Years of Experience</div></div>
+            <div class="stat-card"><div class="stat-card-icon">📱</div><div class="stat-card-num">10+</div><div class="stat-card-label">Projects Delivered</div></div>
+            <div class="stat-card"><div class="stat-card-icon">👥</div><div class="stat-card-num">300K+</div><div class="stat-card-label">Cumulative Users</div></div>
+            <div class="stat-card"><div class="stat-card-icon">⚡</div><div class="stat-card-num">40%</div><div class="stat-card-label">APK Size Reduced</div></div>
+            <div class="stat-card stat-card-wide">
+              <div class="stat-card-icon">🎓</div>
+              <div class="stat-card-num">B.Tech CSE</div>
+              <div class="stat-card-label">Kurukshetra University · 2018–2022 · 8.3 CGPA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         CONTACT
+    ====================================================== -->
     <section id="contact" aria-label="Contact">
       <div class="contact-inner">
         <div class="section-tag reveal" style="display:inline-flex">
-          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+          <i class="fa-solid fa-paper-plane"></i> Let's Connect
         </div>
         <div class="contact-card reveal reveal-delay-1">
           <h2 class="section-title">
-            Ready to build something <span class="gradient-text">amazing?</span>
+            Let's Build Something <span class="gradient-text">Meaningful</span>
           </h2>
-          <p
-            style="color:var(--clr-text-dim);margin-top:0.75rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75">
-            Whether you have a project in mind, need a Flutter wizard, or just want to say hello —
-            my inbox is always open. Let's make something great together!
+          <p class="contact-subtitle">
+            I'm open to <strong>Senior Flutter / Mobile Engineering</strong> opportunities, product engineering roles and interesting technical collaborations.
           </p>
-
 
           <a href="mailto:pkumar.link@gmail.com" class="contact-email-link" id="contact-email-btn">
             <i class="fa-solid fa-envelope"></i>
             pkumar.link@gmail.com
           </a>
 
-
-          <div class="contact-socials">
-            <a href="https://github.com/praween-link" target="_blank" rel="noopener" class="contact-social-link"
-              aria-label="GitHub">
-              <i class="fab fa-github"></i> GitHub
-            </a>
+          <div class="contact-actions">
             <a href="https://www.linkedin.com/in/pkumar-link/" target="_blank" rel="noopener"
-              class="contact-social-link" aria-label="LinkedIn">
+              class="contact-action-btn" id="contact-linkedin-btn">
               <i class="fab fa-linkedin-in"></i> LinkedIn
             </a>
-            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="contact-social-link"
-              aria-label="pub.dev">
+            <a href="https://github.com/praween-link" target="_blank" rel="noopener"
+              class="contact-action-btn" id="contact-github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1tJoLhHB9aOtmtNCilClUwFZVGwf4ofH0/view?usp=drive_link"
+              target="_blank" rel="noopener" class="contact-action-btn contact-action-primary" id="contact-resume-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://pub.dev/publishers/pkumar.link" target="_blank" rel="noopener" class="contact-social-link" aria-label="pub.dev">
               <i class="fab fa-dart-lang"></i> pub.dev
             </a>
-            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="contact-social-link"
-              aria-label="YouTube">
+            <a href="https://www.youtube.com/@pkumarlink" target="_blank" rel="noopener" class="contact-social-link" aria-label="YouTube">
               <i class="fab fa-youtube"></i> YouTube
             </a>
-            <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="contact-social-link"
-              aria-label="Instagram">
+            <a href="https://www.instagram.com/pkumar.link/" target="_blank" rel="noopener" class="contact-social-link" aria-label="Instagram">
               <i class="fab fa-instagram"></i> Instagram
             </a>
           </div>
@@ -552,29 +967,24 @@
     <!-- ======== FOOTER ======== -->
     <footer role="contentinfo">
       <div class="footer-copy">
-        © 2025 <span>Praween Kumar</span> — Built with ❤️ &amp; lots of ☕
+        © 2026 <span>Praween Kumar</span> — Senior Software Engineer · Flutter &amp; Node.js
       </div>
       <div class="footer-links">
-        <a href="#home" class="nav-scroll">Top</a>
-        <a href="#about" class="nav-scroll">About</a>
-        <a href="#projects" class="nav-scroll">Projects</a>
-        <a href="mailto:pkumar.link@gmail.com">Contact</a>
+        <a href="#home" class="nav-scroll">Home</a>
+        <a href="#work" class="nav-scroll">Work</a>
+        <a href="#engineering" class="nav-scroll">Engineering</a>
+        <a href="#experience" class="nav-scroll">Experience</a>
+        <a href="#contact" class="nav-scroll">Contact</a>
       </div>
     </footer>
-
 
   </div><!-- /app-wrapper -->
 
 
-  <!-- ============================================================
-      DATA
- ============================================================ -->
+  <!-- ============ DATA ============ -->
   <script src="./js/data.js"></script>
 
-
-  <!-- ============================================================
-      MAIN SCRIPT
- ============================================================ -->
+  <!-- ============ MAIN SCRIPT ============ -->
   <script>
     /* ======= Loader ======= */
     window.addEventListener('load', () => {
@@ -582,7 +992,6 @@
         document.getElementById('loader').classList.add('hide');
       }, 1800);
     });
-
 
     /* ======= Cursor Glow ======= */
     const glow = document.getElementById('cursorGlow');
@@ -596,18 +1005,7 @@
       requestAnimationFrame(animGlow);
     })();
 
-
-    /* ======= Navbar scroll effect (merged into combined handler below) ======= */
-    const header = document.getElementById('header');
-
-
-    /* ======= Back to top ======= */
-    document.getElementById('back-top').addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-
-    /* ======= Smooth scroll for all .nav-scroll ======= */
+    /* ======= Smooth scroll ======= */
     function setupSmoothScroll() {
       document.querySelectorAll('.nav-scroll').forEach(link => {
         link.addEventListener('click', e => {
@@ -619,11 +1017,9 @@
       });
     }
 
-
     /* ======= Mobile menu ======= */
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
-
 
     function closeMobileMenu() {
       hamburger.classList.remove('open');
@@ -632,7 +1028,6 @@
       mobileMenu.setAttribute('aria-hidden', 'true');
     }
 
-
     hamburger.addEventListener('click', () => {
       const isOpen = mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open', isOpen);
@@ -640,9 +1035,7 @@
       mobileMenu.setAttribute('aria-hidden', !isOpen);
     });
 
-
     document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', closeMobileMenu));
-
 
     /* ======= Scroll Reveal ======= */
     const revealObserver = new IntersectionObserver((entries) => {
@@ -652,24 +1045,21 @@
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
-
+    }, { threshold: 0.1 });
 
     function initReveal() {
       document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
 
-
-    /* ======= Typed Role Animation ======= */
+    /* ======= Typed Role ======= */
     const roles = [
       'Flutter Developer 📱',
-      'Node.js Developer 🌐',
-      'Next.js Developer 🌐',
-      'Full-Stack Developer 🛠️',
+      'Mobile Engineer 🚀',
+      'Node.js Developer ⚡',
+      'Product Engineer 🛠️',
     ];
     let roleIdx = 0, charIdx = 0, deleting = false;
     const typedEl = document.getElementById('typed-role');
-
 
     function typeRole() {
       const current = roles[roleIdx];
@@ -689,7 +1079,6 @@
     }
     setTimeout(typeRole, 2200);
 
-
     /* ======= Experience Tabs ======= */
     document.querySelectorAll('.exp-tab').forEach(tab => {
       tab.addEventListener('click', () => {
@@ -704,74 +1093,128 @@
       });
     });
 
-
-    /* ======= Expand/Collapse experience cards ======= */
+    /* ======= Toggle experience cards ======= */
     function toggleExp(id) {
-      const card = document.getElementById(id);
-      card.classList.toggle('open');
+      document.getElementById(id).classList.toggle('open');
     }
 
+    /* ======= Build Featured Projects ======= */
+    function buildFeaturedProjects() {
+      const container = document.getElementById('featured-projects-container');
+      if (!container || typeof featuredProjects === 'undefined') return;
 
-    /* ======= Build Project Cards ======= */
-    function stripHtml(html) {
-      const tmp = document.createElement('div');
-      tmp.innerHTML = html;
-      return tmp.textContent || tmp.innerText || '';
+      featuredProjects.forEach((proj, i) => {
+        const isReversed = i % 2 === 1;
+        const storeLinks = [
+          proj.android ? `<a href="${proj.android}" target="_blank" rel="noopener" class="store-btn"><i class="fab fa-google-play"></i> Play Store</a>` : '',
+          proj.ios ? `<a href="${proj.ios}" target="_blank" rel="noopener" class="store-btn"><i class="fab fa-app-store-ios"></i> App Store</a>` : '',
+          proj.link ? `<a href="${proj.link}" target="_blank" rel="noopener" class="store-btn"><i class="fa-solid fa-globe"></i> Website</a>` : '',
+        ].join('');
+
+        const impactHtml = proj.impact ? proj.impact.map(m => `
+          <div class="fp-impact-item">
+            <div class="fp-impact-val">${m.value}</div>
+            <div class="fp-impact-label">${m.label}</div>
+          </div>`).join('') : '';
+
+        const contribHtml = proj.contributions ? proj.contributions.map(c =>
+          `<li><i class="fa-solid fa-check"></i> ${c}</li>`).join('') : '';
+
+        const stackHtml = (proj.stack || []).map(s => `<span>${s}</span>`).join('');
+
+        const personalBadge = proj.isPersonal ? '<span class="fp-personal-badge"><i class="fa-solid fa-star"></i> Founder Project</span>' : '';
+
+        const imagesHtml = proj.images && proj.images.length > 0
+          ? `<div class="fp-screenshots">${proj.images.slice(0, 3).map(img => `<img src="${img}" alt="${proj.name} screenshot" loading="lazy" onerror="this.style.display='none'">`).join('')}</div>`
+          : `<div class="fp-no-img" style="background:${proj.theme.bg}"><i class="fa-solid ${proj.theme.icon}" style="font-size:5rem;opacity:0.3;color:${proj.theme.accent}"></i></div>`;
+
+        const card = document.createElement('div');
+        card.className = `featured-project ${isReversed ? 'reversed' : ''} reveal`;
+        card.innerHTML = `
+          <div class="fp-visual" style="background:${proj.theme.bg}">
+            ${imagesHtml}
+            <div class="fp-visual-accent" style="background:${proj.theme.accent}22"></div>
+          </div>
+          <div class="fp-content">
+            <div class="fp-header">
+              ${personalBadge}
+              <div class="fp-stack">${stackHtml}</div>
+            </div>
+            <h3 class="fp-name">${proj.name}</h3>
+            <div class="fp-tagline">${proj.tagline}</div>
+            <p class="fp-about">${proj.about}</p>
+            ${contribHtml ? `<ul class="fp-contributions">${contribHtml}</ul>` : ''}
+            ${impactHtml ? `<div class="fp-impact">${impactHtml}</div>` : ''}
+            <div class="fp-actions">${storeLinks}</div>
+          </div>
+        `;
+
+        if (proj.images && proj.images.length > 0) {
+          card.querySelector('.fp-visual').style.cursor = 'pointer';
+          card.querySelector('.fp-visual').addEventListener('click', () => openLightbox(proj.images, 0));
+        }
+
+        container.appendChild(card);
+      });
+      initReveal();
     }
 
+    /* ======= Toggle All Projects ======= */
+    function toggleAllProjects() {
+      const section = document.getElementById('all-projects-section');
+      const btn = document.getElementById('toggle-all-projects-btn');
+      const grid = document.getElementById('all-projects-grid');
 
-    function buildProjectCards() {
-      const grid = document.getElementById('projects-grid');
-      if (!grid || typeof projectsData === 'undefined') return;
+      if (section.style.display === 'none') {
+        section.style.display = 'block';
+        btn.innerHTML = '<i class="fa-solid fa-times"></i> Hide All Projects';
+        if (grid.children.length === 0) buildAllProjectsGrid();
+        initReveal();
+      } else {
+        section.style.display = 'none';
+        btn.innerHTML = '<i class="fa-solid fa-th-large"></i> View All Projects';
+      }
+    }
 
+    function buildAllProjectsGrid() {
+      const grid = document.getElementById('all-projects-grid');
+      if (!grid || typeof allProjects === 'undefined') return;
 
-      projectsData.forEach((proj, i) => {
+      allProjects.forEach((proj, i) => {
         const card = document.createElement('div');
         card.className = 'project-card reveal';
         if (i % 3 === 1) card.classList.add('reveal-delay-1');
         if (i % 3 === 2) card.classList.add('reveal-delay-2');
 
-
-        const theme = proj.theme || { bg: 'var(--clr-surface-2)', icon: 'fa-rocket' };
-        const collageImages = (proj.images || []).filter(img => !img.includes('banner')).slice(0, 4);
-        const collageHtml = collageImages.length > 0
-          ? `<div class="project-collage">${collageImages.map(img => `<img src="${img}" class="collage-item" loading="lazy">`).join('')}</div>`
-          : `<div style="height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;">📱</div>`;
-
-
-        const bannerHtml = `
-         <div class="project-banner-bg banner-${proj.type || 'default'}" style="background: ${theme.bg}">
-           <i class="fa-solid ${theme.icon} theme-icon-overlay"></i>
-           ${collageHtml}
-         </div>
-       `;
-
-
-        const tags = (proj.key_points || []).map(t => `<span class="project-tag">${t}</span>`).join('');
-
-
         const storeLinks = [
           proj.android ? `<a href="${proj.android}" target="_blank" rel="noopener" class="store-btn"><i class="fab fa-google-play"></i> Play</a>` : '',
-          proj.ios ? `<a href="${proj.ios}"     target="_blank" rel="noopener" class="store-btn"><i class="fab fa-app-store-ios"></i> iOS</a>` : '',
-          proj.link ? `<a href="${proj.link}"    target="_blank" rel="noopener" class="store-btn"><i class="fa-solid fa-link"></i> Web</a>` : '',
+          proj.ios ? `<a href="${proj.ios}" target="_blank" rel="noopener" class="store-btn"><i class="fab fa-app-store-ios"></i> iOS</a>` : '',
+          proj.link ? `<a href="${proj.link}" target="_blank" rel="noopener" class="store-btn"><i class="fa-solid fa-globe"></i> Web</a>` : '',
         ].join('');
 
+        const stackHtml = (proj.stack || []).slice(0, 4).map(s => `<span class="project-tag">${s}</span>`).join('');
+
+        const imgs = (proj.images || []).slice(0, 4);
+        const collageHtml = imgs.length > 0
+          ? `<div class="project-collage">${imgs.map(img => `<img src="${img}" class="collage-item" loading="lazy" onerror="this.style.display='none'">`).join('')}</div>`
+          : `<div style="height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem">📱</div>`;
 
         card.innerHTML = `
-         <div class="project-img-wrap">
-           ${bannerHtml}
-           <div class="project-img-overlay"></div>
-           ${storeLinks ? `<div class="project-store-links">${storeLinks}</div>` : ''}
-         </div>
-         <div class="project-body">
-           <div class="project-name">${proj.name}</div>
-           <div class="project-platform"><i class="fa-solid fa-mobile-screen"></i> ${proj.sub_title}</div>
-           <p class="project-desc">${stripHtml(proj.about)}</p>
-           <div class="project-tags">${tags}</div>
-         </div>`;
+          <div class="project-img-wrap">
+            <div class="project-banner-bg" style="background:${(proj.theme||{}).bg||'var(--clr-surface-2)'}">
+              <i class="fa-solid ${(proj.theme||{}).icon||'fa-rocket'} theme-icon-overlay"></i>
+              ${collageHtml}
+            </div>
+            <div class="project-img-overlay"></div>
+            ${storeLinks ? `<div class="project-store-links">${storeLinks}</div>` : ''}
+          </div>
+          <div class="project-body">
+            <div class="project-name">${proj.name}</div>
+            <div class="project-platform"><i class="fa-solid fa-mobile-screen"></i> ${proj.tagline || proj.type}</div>
+            <p class="project-desc">${proj.about}</p>
+            <div class="project-tags">${stackHtml}</div>
+          </div>`;
 
-
-        /* Click opens lightbox if images exist */
         if (proj.images && proj.images.length > 0) {
           card.style.cursor = 'pointer';
           card.addEventListener('click', (e) => {
@@ -780,18 +1223,88 @@
           });
         }
 
-
         grid.appendChild(card);
       });
+    }
 
+    /* ======= Build Case Studies ======= */
+    function buildCaseStudies() {
+      const container = document.getElementById('case-studies-container');
+      if (!container || typeof caseStudies === 'undefined') return;
 
+      caseStudies.forEach((cs, i) => {
+        const el = document.createElement('div');
+        el.className = 'case-study reveal';
+
+        const investigationHtml = (cs.investigation || []).map(item => `<li>${item}</li>`).join('');
+        const solutionHtml = (cs.solution || []).map(item => `<li>${item}</li>`).join('');
+
+        el.innerHTML = `
+          <div class="cs-header">
+            <div class="cs-number" style="color:${cs.accent}">${cs.number}</div>
+            <div class="cs-meta">
+              <div class="cs-subtitle" style="color:${cs.accent}">${cs.subtitle}</div>
+              <h3 class="cs-title">${cs.title}</h3>
+            </div>
+            <div class="cs-metric" style="border-color:${cs.accent}44;background:${cs.accent}11">
+              <div class="cs-metric-val" style="color:${cs.accent}">${cs.metric}</div>
+              <div class="cs-metric-label">${cs.metricLabel}</div>
+            </div>
+          </div>
+          <div class="cs-body">
+            <div class="cs-section">
+              <div class="cs-section-label" style="color:${cs.accent}"><i class="fa-solid fa-triangle-exclamation"></i> Problem</div>
+              <p>${cs.problem}</p>
+            </div>
+            <div class="cs-grid-2">
+              <div class="cs-section">
+                <div class="cs-section-label" style="color:${cs.accent}"><i class="fa-solid fa-magnifying-glass"></i> Investigation</div>
+                <ul class="cs-list">${investigationHtml}</ul>
+              </div>
+              <div class="cs-section">
+                <div class="cs-section-label" style="color:${cs.accent}"><i class="fa-solid fa-wrench"></i> Solution</div>
+                <ul class="cs-list">${solutionHtml}</ul>
+              </div>
+            </div>
+            <div class="cs-result" style="border-left-color:${cs.accent};background:${cs.accent}0d">
+              <i class="fa-solid fa-arrow-trend-up" style="color:${cs.accent}"></i>
+              <strong>Result:</strong> ${cs.result}
+            </div>
+          </div>
+        `;
+        container.appendChild(el);
+      });
       initReveal();
     }
 
+    /* ======= Build Open Source ======= */
+    function buildOpenSource() {
+      const grid = document.getElementById('oss-grid');
+      if (!grid || typeof openSourcePackages === 'undefined') return;
+
+      openSourcePackages.forEach((pkg, i) => {
+        const el = document.createElement('div');
+        el.className = `oss-card reveal ${i === 1 ? 'reveal-delay-1' : ''}`;
+        el.innerHTML = `
+          <div class="oss-icon"><i class="fa-solid ${pkg.icon}"></i></div>
+          <div class="oss-name">${pkg.name}</div>
+          <p class="oss-desc">${pkg.description}</p>
+          <div class="oss-links">
+            <a href="${pkg.pubdev}" target="_blank" rel="noopener" class="store-btn">
+              <i class="fab fa-dart-lang"></i> pub.dev
+            </a>
+            <a href="${pkg.github}" target="_blank" rel="noopener" class="store-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        `;
+        grid.appendChild(el);
+      });
+      initReveal();
+    }
 
     /* ======= Lightbox ======= */
     let lbImages = [], lbIndex = 0;
-
 
     function openLightbox(images, idx) {
       lbImages = images;
@@ -801,18 +1314,15 @@
       document.body.style.overflow = 'hidden';
     }
 
-
     function closeLightbox() {
       document.getElementById('lightbox').classList.remove('open');
       document.body.style.overflow = '';
     }
 
-
     function updateLightbox() {
       document.getElementById('lightboxImg').src = lbImages[lbIndex];
       document.getElementById('lightboxCounter').textContent = `${lbIndex + 1} / ${lbImages.length}`;
     }
-
 
     document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
     document.getElementById('lightboxPrev').addEventListener('click', () => {
@@ -833,39 +1343,39 @@
       if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; updateLightbox(); }
     });
 
-
-    /* ======= Scroll Progress Bar ======= */
+    /* ======= Scroll Progress ======= */
     const progressBar = document.getElementById('scroll-progress');
     function updateProgress() {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      progressBar.style.width = pct + '%';
+      progressBar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
     }
 
-
-    /* ======= Active Nav Highlight ======= */
-    const sections = ['home', 'about', 'experience', 'projects', 'contact'];
+    /* ======= Active Nav ======= */
+    const navSections = ['home', 'what-i-build', 'impact', 'work', 'travnect-case', 'engineering', 'skills', 'experience', 'approach', 'opensource', 'about', 'contact'];
     const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
     function updateActiveNav() {
       let current = 'home';
-      sections.forEach(id => {
+      navSections.forEach(id => {
         const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 120) current = id;
+        if (el && window.scrollY >= el.offsetTop - 130) current = id;
       });
       navAnchors.forEach(a => {
         a.classList.toggle('active', a.getAttribute('href') === '#' + current);
       });
     }
 
+    /* ======= Back to Top ======= */
+    document.getElementById('back-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
-    /* ======= Particles Canvas ======= */
+    /* ======= Particles ======= */
     function initParticles() {
       const canvas = document.getElementById('hero-particles');
       if (!canvas) return;
       const ctx = canvas.getContext('2d');
       let W, H, particles = [];
-
 
       function resize() {
         W = canvas.width = canvas.offsetWidth;
@@ -874,12 +1384,10 @@
       resize();
       window.addEventListener('resize', resize, { passive: true });
 
-
       const COLORS = ['rgba(108,99,255,', 'rgba(0,212,255,', 'rgba(255,107,157,'];
       for (let i = 0; i < 55; i++) {
         particles.push({
-          x: Math.random() * 1200,
-          y: Math.random() * 800,
+          x: Math.random() * 1200, y: Math.random() * 800,
           r: Math.random() * 1.8 + 0.4,
           dx: (Math.random() - 0.5) * 0.35,
           dy: (Math.random() - 0.5) * 0.35,
@@ -888,7 +1396,6 @@
         });
       }
 
-
       function draw() {
         ctx.clearRect(0, 0, W, H);
         particles.forEach(p => {
@@ -896,14 +1403,10 @@
           ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
           ctx.fillStyle = p.color + p.alpha + ')';
           ctx.fill();
-          p.x += p.dx;
-          p.y += p.dy;
-          if (p.x < 0) p.x = W;
-          if (p.x > W) p.x = 0;
-          if (p.y < 0) p.y = H;
-          if (p.y > H) p.y = 0;
+          p.x += p.dx; p.y += p.dy;
+          if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
         });
-        // Draw faint connection lines
         for (let i = 0; i < particles.length; i++) {
           for (let j = i + 1; j < particles.length; j++) {
             const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
@@ -922,29 +1425,29 @@
       draw();
     }
 
-
-    /* ======= Combined scroll handler ======= */
+    /* ======= Scroll handler ======= */
     window.addEventListener('scroll', () => {
-      const header = document.getElementById('header');
-      if (header) header.classList.toggle('scrolled', window.scrollY > 20);
+      const hdr = document.getElementById('header');
+      if (hdr) hdr.classList.toggle('scrolled', window.scrollY > 20);
       updateProgress();
       updateActiveNav();
+      const btn = document.getElementById('back-top');
+      if (btn) btn.classList.toggle('visible', window.scrollY > 400);
     }, { passive: true });
-
 
     /* ======= Init ======= */
     document.addEventListener('DOMContentLoaded', () => {
-      const header = document.getElementById('header');
-      if (header) header.classList.toggle('scrolled', window.scrollY > 20);
+      const hdr = document.getElementById('header');
+      if (hdr) hdr.classList.toggle('scrolled', window.scrollY > 20);
       setupSmoothScroll();
       initReveal();
-      buildProjectCards();
+      buildFeaturedProjects();
+      buildCaseStudies();
+      buildOpenSource();
       initParticles();
       updateActiveNav();
     });
   </script>
 
-
 </body>
-
 </html>
