@@ -1,291 +1,321 @@
-/// Json Data of Products
-const projectsData = [
-    {
-        "id": "07",
-        "name": "NeoZap",
-        "sub_title": "Application (Android & IOS)",
-        "about": `Contributed extensively to the <b>NeoZap</b> mobile app, focusing on responsive UI design, onboarding redesign (including passcode and 2FA), and performance improvements. Added key features such as offers, rewards, chatbot, and a modular home screen. Led enhancements in video handling, user profile animations, NFC/push notification integrations, and app architecture. Achieved faster app load times, reduced app size by 20%, and resolved major VAPT and crash issues.`,
-        "key_points": [
-            "Enhancements/Code Optimizations", "New Features/Changes Integration", "Bug Fixes"
-        ],
-        "images": [
-            "assets/project/neozap/neozap1.png",
-            "assets/project/neozap/neozap2.png",
-            "assets/project/neozap/neozap3.png",
-        ],
-        "android": "https://play.google.com/store/apps/details?id=com.neofinity.neozap",
-        "ios": "https://apps.apple.com/in/app/neozap-tap-pay-with-iphone/id6547854547",
-        "theme": { "bg": "linear-gradient(135deg, #1a0b3b, #0d0d2b)", "icon": "fa-microchip", "accent": "#6c63ff" },
-        "type": "fintech"
-    },
-    {
-        "id": "01",
-        "name": "Lifeizz",
-        "sub_title": "Application (Android & IOS)",
-        "about": `<b>Lifeizz</b> is a versatile mobile app built with Flutter, offering Android and iOS users a unique language learning experience. Engage with daily new words and weekly themed collections, fostering vibrant discussions through interactive features like commenting and liking. Real-time updates via web sockets keep users connected to changes and interactions as they happen. With user-friendly phone number authentication, "Lifeizz" provides a seamless and personalized journey for users to enhance their vocabulary and cultural understanding.`,
-        "key_points": [
-            "Implement all the functionalities", "API integration", "Socket", "Real-Time Update", "Notifications"
-        ],
-        "images": [
-            "assets/project/lifeizz/lifeizz1.jpg",
-            "assets/project/lifeizz/lifeizz2.jpg",
-            "assets/project/lifeizz/lifeizz3.jpg",
-            "assets/project/lifeizz/lifeizz4.jpg",
-            "assets/project/lifeizz/lifeizz5.jpg",
-            "assets/project/lifeizz/lifeizz6.jpg",
-            "assets/project/lifeizz/lifeizz7.jpg",
-            "assets/project/lifeizz/lifeizz8.jpg",
-            "assets/project/lifeizz/lifeizz9.jpg",
-            "assets/project/lifeizz/lifeizz10.jpg",
-            "assets/project/lifeizz/lifeizz11.jpg",
-            "assets/project/lifeizz/lifeizz12.jpg",
-            "assets/project/lifeizz/lifeizz13.jpg",
-            "assets/project/lifeizz/lifeizz14.jpg",
-            "assets/project/lifeizz/lifeizz15.jpg",
-            "assets/project/lifeizz/lifeizz16.jpg",
-            "assets/project/lifeizz/lifeizz17.jpg",
-            "assets/project/lifeizz/lifeizz18.jpg"
-        ],
-        "android": "https://drive.google.com/drive/folders/1Ay7Cl181HHMk-tTypnTkuWcucX0vmpHU?usp=drive_link",
-        "theme": { "bg": "linear-gradient(135deg, #2e1a4d, #1a0b3b)", "icon": "fa-language", "accent": "#ff6b9d" },
-        "type": "language"
-    },
-    {
-        "id": "02",
-        "name": "Ownitoo",
-        "sub_title": "Application (Android & IOS)",
-        "about": "<b>Ownitoo</b> is a user-friendly mobile app that changes the way people buy and sell items. Whether you're a seller or a buyer, Ownitoo has you covered. Sellers can list their items for sale directly or opt for a bidding process. Buyers have the option to purchase items outright or invest in shares of products, allowing for shared ownership within a community. Plus, Ownitoo includes a chat feature, enabling users to communicate in group chats or have one-on-one conversations with buyers and sellers. By promoting collaboration and transparency, Ownitoo creates a hassle-free marketplace where everyone can find what they need and make fair deals.",
-        "key_points": [
-            "Implement all the functionalities", "API integration", "Socket-Chat", "Biding & Share", "Notifications", "Payment", "Getaways"
-        ],
-        "images": [
-            "assets/project/ownitoo/01.jpg",
-            "assets/project/ownitoo/02.jpg",
-            "assets/project/ownitoo/03.jpg",
-            "assets/project/ownitoo/04.jpg",
-            "assets/project/ownitoo/05.jpg",
-            "assets/project/ownitoo/06.jpg",
-            "assets/project/ownitoo/07.jpg",
-            "assets/project/ownitoo/08.jpg",
-            "assets/project/ownitoo/09.jpg",
-            "assets/project/ownitoo/10.jpg",
-            "assets/project/ownitoo/11.jpg",
-            "assets/project/ownitoo/12.jpg",
-            "assets/project/ownitoo/13.jpg",
-            "assets/project/ownitoo/14.jpg",
-            "assets/project/ownitoo/15.jpg"
-        ],
-        "android": "https://play.google.com/store/apps/details?id=com.app.ownitoo",
-        "ios": "https://apps.apple.com/in/app/ownitoo/id6448990297",
-        "theme": { "bg": "linear-gradient(135deg, #0d1b3b, #1a237e)", "icon": "fa-coins", "accent": "#ffd166" },
-        "type": "marketplace"
-    },
-    {
-        "id": "03",
-        "name": "BluBin",
-        "sub_title": "Application (Android & IOS)",
-        "about": "<b>BluBin</b> is a revolutionary app designed to simplify waste management and promote environmental stewardship. With its intuitive interface and powerful features, BluBin allows users to request trash pick-up services from any location with ease. Whether you're a homeowner, event organizer, or business, BluBin connects you with reliable trash collectors who efficiently remove waste. Users earn points based on the weight of collected trash, which can be redeemed for valuable discounts on products and services. By incentivizing responsible waste disposal, BluBin not only helps keep communities clean but also rewards users for their eco-friendly actions, fostering a cleaner, greener future for all.",
-        "key_points": [
-            "Implement all the functionalities", "API integration", "Search Location", "Pick Location By Map", "Notifications"
-        ],
-        "images": [
-            "assets/project/blubin/blubin08.jpeg",
-            "assets/project/blubin/blubin02.jpeg",
-            "assets/project/blubin/blubin01.jpeg",
-            "assets/project/blubin/blubin03.jpeg",
-            "assets/project/blubin/blubin04.jpeg",
-            "assets/project/blubin/blubin05.jpeg",
-            "assets/project/blubin/blubin06.jpeg",
-            "assets/project/blubin/blubin07.jpeg",
-            "assets/project/blubin/blubin09.jpeg",
-            "assets/project/blubin/blubin10.jpeg",
-            "assets/project/blubin/blubin11.jpeg",
-            "assets/project/blubin/blubin12.jpeg",
-            "assets/project/blubin/blubin13.jpeg"
-        ],
-        "android": "https://drive.google.com/drive/folders/11wYTPi6h3_CaO5Pd4wMFCXdjZ43Lb9BS?usp=drive_link",
-        "theme": { "bg": "linear-gradient(135deg, #0b2e1a, #1a3b2b)", "icon": "fa-leaf", "accent": "#00d4ff" },
-        "type": "eco"
-    },
-    {
-        "id": "04",
-        "name": "OwnUrHealth",
-        "sub_title": "Application (Android & IOS)",
-        "about": `<b>ownUrHealth™</b> is a state-of-the-art digital healthcare platform built with Flutter for Android and iOS devices. Operated by The Center for Healthcare Education, Research & Innovation (C.H.E.R.I.), its mission is to enhance access to healthcare services and improve health outcomes.
+// ─── FEATURED PROJECTS ──────────────────────────────────────────────────────
+const featuredProjects = [
+  {
+    id: "neozap",
+    name: "NeoZap",
+    tagline: "Fintech & Payments Platform",
+    type: "fintech",
+    featured: true,
+    stack: ["Flutter", "Dart", "Node.js", "MongoDB", "Firebase", "REST APIs"],
+    about: "A fintech and payments platform serving 100K+ users, with features across wallet services, NCMC recharge, card ordering, rewards and digital gold. Contributed to building and optimizing core product experiences across secure onboarding, performance, and production stability.",
+    contributions: [
+      "Wallet & payment flows",
+      "NCMC recharge integration",
+      "Card ordering workflows",
+      "Rewards & digital gold",
+      "Secure onboarding & 2FA",
+      "Passcode authentication",
+      "Performance optimization",
+      "Production crash reduction"
+    ],
+    impact: [
+      { value: "40%", label: "APK size & startup improvement" },
+      { value: "100K+", label: "Active users served" },
+      { value: "Near-zero", label: "Critical crashes after optimization" },
+      { value: "95%", label: "Onboarding quality improvement" }
+    ],
+    android: "https://play.google.com/store/apps/details?id=com.neofinity.neozap",
+    ios: "https://apps.apple.com/in/app/neozap-tap-pay-with-iphone/id6547854547",
+    images: [
+      "assets/project/neozap/neozap8.jpg",
+      "assets/project/neozap/neozap3.png",
+      "assets/project/neozap/neozap4.jpg",
+      "assets/project/neozap/neozap5.jpg",
+      "assets/project/neozap/neozap1.png",
+      "assets/project/neozap/neozap2.png",
+      "assets/project/neozap/neozap6.jpg",
+      "assets/project/neozap/neozap7.jpg",
 
+    ],
+    theme: { bg: "linear-gradient(135deg, #0f0824, #1a0b3b, #0d1a3b)", accent: "#6c63ff", icon: "fa-microchip" }
+  },
+  {
+    id: "rupeezy",
+    name: "Rupeezy",
+    tagline: "Trading & Investment Platform",
+    type: "fintech",
+    featured: true,
+    stack: ["Flutter", "Dart", "APIs", "Firebase", "WebSockets"],
+    about: "Contributed to a large-scale financial application serving 200K+ users, working on mobile features, integrations, performance improvements and production engineering for a high-reliability trading platform.",
+    contributions: [
+      "Mobile feature development",
+      "Financial workflow integrations",
+      "Performance improvements",
+      "Production reliability engineering",
+      "Real-time data integrations",
+      "Trade execution flows"
+    ],
+    impact: [
+      { value: "200K+", label: "Users on the platform" },
+      { value: "High", label: "Production reliability" },
+      { value: "Real-time", label: "Trading data integration" }
+    ],
+    android: "https://play.google.com/store/apps/details?id=in.rupeezy.partner",
+    ios: "https://apps.apple.com/in/app/rupeezy-mf-partner-app-mfds/id6740856285",
+    images: [
+      "assets/project/rupeezy/rupeezy_1.png",
+      "assets/project/rupeezy/rupeezy_2.png",
+      "assets/project/rupeezy/rupeezy_3.jpg"
+    ],
+    theme: { bg: "linear-gradient(135deg, #0b1a2e, #0d2744, #0a1e3b)", accent: "#00d4ff", icon: "fa-chart-line" }
+  },
+  {
+    id: "travnect",
+    name: "Travnect",
+    tagline: "Travel Discovery & Companion Platform",
+    type: "travel",
+    featured: true,
+    isPersonal: true,
+    stack: ["Flutter", "Node.js", "TypeScript", "MongoDB", "Socket.io", "Firebase", "AWS", "Map APIs"],
+    about: "A travel-focused social platform designed to help people discover places, document their journeys, plan future adventures and connect with travelers who share similar interests and travel styles. Designed, developed and deployed end-to-end.",
+    contributions: [
+      "Travel partner matching algorithm",
+      "Interactive journey map (globe view)",
+      "Trip creation & discovery",
+      "Visited places with photos & activities",
+      "Travel stories feed",
+      "Future travel bucket list",
+      "1:1 & group chat (Socket.io)",
+      "Location-based discovery",
+      "AWS EC2 + Nginx deployment",
+      "Push notifications (FCM)"
+    ],
+    impact: [
+      { value: "End-to-end", label: "Product ownership" },
+      { value: "Full-stack", label: "Mobile + Backend + Cloud" },
+      { value: "Real-time", label: "Chat & location features" }
+    ],
+    link: "https://travnect.com",
+    android: "https://play.google.com/store/apps/details?id=com.travnect.app",
+    images: [
+      "assets/project/travnect/travnect_1.png",
+      "assets/project/travnect/travnect_2.png",
+      "assets/project/travnect/travnect_3.png",
+      "assets/project/travnect/travnect_4.png",
+      "assets/project/travnect/travnect_5.png"
+    ],
+    theme: { bg: "linear-gradient(135deg, #0a1f0f, #0d2b1a, #0f1a2e)", accent: "#00c853", icon: "fa-map-location-dot" }
+  },
+  {
+    id: "prohealth",
+    name: "OwnUrHealth",
+    tagline: "Healthcare Platform",
+    type: "health",
+    featured: true,
+    stack: ["Flutter", "Dart", "REST APIs", "Socket.io", "Firebase"],
+    about: "Mobile healthcare experience built with Flutter, focusing on reliable API integration, appointment workflows, secure patient-provider messaging, and production-ready UI serving real healthcare users.",
+    contributions: [
+      "Appointment booking system",
+      "Secure patient-provider messaging",
+      "QR code generation",
+      "Medication management",
+      "Subscription services",
+      "Real-time notifications"
+    ],
+    impact: [
+      { value: "Live", label: "On App Store & Play Store" },
+      { value: "Secure", label: "Healthcare data handling" }
+    ],
+    android: "https://play.google.com/store/apps/details?id=com.ownUrHealth",
+    ios: "https://apps.apple.com/in/app/ownurhealth/id1614815153",
+    images: [
+      "assets/project/ownurhealth/ouh01.jpeg",
+      "assets/project/ownurhealth/ouh02.jpeg",
+      "assets/project/ownurhealth/ouh03.jpeg",
+      "assets/project/ownurhealth/ouh04.jpeg",
+    ],
+    theme: { bg: "linear-gradient(135deg, #00252a, #00363a, #006064)", accent: "#00d4ff", icon: "fa-heart-pulse" }
+  }
+];
 
-       Key features include seamless appointment booking, symptom check surveys, and secure messaging between patients, caretakers, and healthcare professionals. The app also offers QR code generation of users, medication management, and subscription services.
-      
-       With ownUrHealth™, users can take control of their health, collaborate effectively with healthcare providers, and benefit from streamlined healthcare management, leading to improved overall well-being and access to quality care.`,
-        "key_points": [
-            "API integration", "Socket-Chat", "Notifications", "Payment Getaways"
-        ],
-        "images": [
-            "assets/project/ownurhealth/ouh01.jpeg",
-            "assets/project/ownurhealth/ouh02.jpeg",
-            "assets/project/ownurhealth/ouh03.jpeg",
-            "assets/project/ownurhealth/ouh04.jpeg",
-            "assets/project/ownurhealth/ouh05.jpeg",
-            "assets/project/ownurhealth/ouh06.jpeg",
-            "assets/project/ownurhealth/ouh07.jpeg",
-            "assets/project/ownurhealth/ouh08.jpeg",
-            "assets/project/ownurhealth/ouh09.jpeg",
-            "assets/project/ownurhealth/ouh10.jpeg",
-            "assets/project/ownurhealth/ouh11.jpeg",
-            "assets/project/ownurhealth/ouh12.jpeg",
-            "assets/project/ownurhealth/ouh13.jpeg",
-            "assets/project/ownurhealth/ouh14.jpeg",
-            "assets/project/ownurhealth/ouh15.jpeg",
-            "assets/project/ownurhealth/ouh16.jpeg"
-        ],
-        // "project_link": "https://play.google.com/store/apps/details?id=com.ownUrHealth",
-        "android": "https://play.google.com/store/apps/details?id=com.ownUrHealth",
-        "ios": "https://apps.apple.com/in/app/ownurhealth/id1614815153",
-        "theme": { "bg": "linear-gradient(135deg, #00363a, #006064)", "icon": "fa-heart-pulse", "accent": "#ffffff" },
-        "type": "health"
-    },
-    {
-        "id": "05",
-        "name": "Jobbie",
-        "sub_title": "Application (Android & IOS)",
-        "about": `<b>Jobbie</b> app connects employers with workers for various tasks such as landscaping, gardening, dog care, and cleaning. Employers can post jobs displayed on a map, while workers can search, filter, and apply for jobs. The app facilitates communication between employers and workers, ensures secure payments, and offers flexibility with wallet withdrawals. Jobbie streamlines the job search process, fosters efficient hiring, and promotes a reliable gig economy experience for all users.`,
-        "key_points": [
-            "Implement all the functionalities", "API integration", "Socket-Chat", "Notifications", "Payment Getaways", "Map"
-        ],
-        "images": [
-            "assets/project/jobbie/jobbie01.jpeg",
-            "assets/project/jobbie/jobbie02.jpeg",
-            "assets/project/jobbie/jobbie03.jpeg",
-            "assets/project/jobbie/jobbie04.jpeg",
-            "assets/project/jobbie/jobbie05.jpeg",
-            "assets/project/jobbie/jobbie06.jpeg",
-            "assets/project/jobbie/jobbie07.jpeg",
-            "assets/project/jobbie/jobbie08.jpeg",
-            "assets/project/jobbie/jobbie09.jpeg",
-            "assets/project/jobbie/jobbie10.jpeg",
-            "assets/project/jobbie/jobbie11.jpeg",
-            "assets/project/jobbie/jobbie12.jpeg",
-            "assets/project/jobbie/jobbie13.jpeg",
-            "assets/project/jobbie/jobbie14.jpeg",
-            "assets/project/jobbie/jobbie15.jpeg",
-            "assets/project/jobbie/jobbie16.jpeg",
-            "assets/project/jobbie/jobbie17.jpeg"
-        ],
-        "theme": { "bg": "linear-gradient(135deg, #4e342e, #5d4037)", "icon": "fa-map-pin", "accent": "#ffd166" },
-        "type": "gig"
-    },
-    {
-        "id": "06",
-        "name": "My Tasks",
-        "sub_title": "Application (Android)",
-        "about": `<b>My Tasks</b> is a simple and intuitive task management app that helps users stay organized and on top of their responsibilities. With features to add tasks, including titles, descriptions, durations, and categories, users can easily prioritize and track their to-do lists. The app also allows users to create custom categories for better organization. By providing a user-friendly interface and practical functionality, "My Tasks" streamlines task management and ensures efficient completion of all tasks, leading to improved productivity and time management for users`,
-        "key_points": [
-            "UI Design", "Functionalities", "Loal DB"
-        ],
-        "images": [
-            "assets/project/mytasks/1.webp",
-            "assets/project/mytasks/2.webp",
-            "assets/project/mytasks/3.webp",
-            "assets/project/mytasks/4.webp",
-            "assets/project/mytasks/5.webp"
-        ],
-        "android": "https://play.google.com/store/apps/details?id=com.pkumar.link.mytasks",
-        "theme": { "bg": "linear-gradient(135deg, #1c2331, #2e3b4e)", "icon": "fa-check-double", "accent": "#ffffff" },
-        "type": "task"
-    }
-]
-/// Json Data of Products Web
-const webProjectsData = [
-    {
-        "id": "01",
-        "name": "Portfolio",
-        "sub_title": "Web Application",
-        "about": `Portfolio Website`,
-        "key_points": [
-            "HTML", "CSS", "Java Script"
-        ],
-        "images": [
-            "assets/project/lifeizz/lifeizz1.jpg",
-            "assets/project/lifeizz/lifeizz2.jpg",
-            "assets/project/lifeizz/lifeizz3.jpg",
-            "assets/project/lifeizz/lifeizz4.jpg",
-            "assets/project/lifeizz/lifeizz18.jpg"
-        ],
-        "link": "",
-    }
-]
-/// Json Data of Experiance
-const experianceData = [
-    {
-        "id": "1",
-        "name": "Work Experience",
-        "items": [
-            {
-                "id": "3",
-                "logo": "assets/logoes/antino_labs_logo.jpeg",
-                "title": "Antino",
-                "location": "Gurgaon, Haryana",
-                "start_date": "June 2024",
-                "end_date": "Present",
-                "designation": "Software Developer",
-                "describe": `As a Software Developer specializing in Flutter, I work on the client side of a NeoZap Fintech & Payments product, contributing directly to the user-facing experience of the application. My primary responsibilities include:
-               - <i style="text-decoration-color:#515152">Developing new features and implementing functional changes</i>,
-                - <i style="text-decoration-color:#515152">Optimizing codebase structure to enhance maintainability and scalability</i>,
-               - <i style="text-decoration-color:#515152">Improving app performance, including reducing load times, enhancing responsiveness, and ensuring smooth interactions</i>`,
-                "theme": "rgba(255, 255, 255, 0.8)",
-                "themeOp": "rgba(255, 255, 255, 0.5)"
-            },
-            {
-                "id": "1",
-                "logo": "assets/logoes/cqlsys.png",
-                "title": "Cqlsys Technologies",
-                "location": "Mohali, Punjab",
-                "start_date": "July 2023",
-                "end_date": "March 2024",
-                "designation": "Software Developer (Flutter)",
-                "describe": `As a proficient Flutter Developer at Cqlsys Technologies, I undertook a pivotal role in driving
-               the success of three distinct projects, taking full ownership of each, with a particular
-               emphasis on the functionality aspect. My responsibilities included extensive work in API
-               integration, notification, payment gateway, real-time chats, biding, tracking features, and
-               authentications.`,
-                "theme": "#33a85878",
-                "themeOp": "#33a8584d"
-            },
-            {
-                "id": "2",
-                "logo": "assets/logoes/nexever.png",
-                "title": "Nexever",
-                "location": "Mohali, Punjab",
-                "start_date": "May 2022",
-                "end_date": "June 2023",
-                "designation": "Flutter Developer",
-                "describe": `At NexEver Pvt. Ltd, as a Flutter Developer, I played a key role in executing 4-5 projects.
-               Responsible for UI design, functionality, and critical elements like API integration,
-               notifications, real-time chats, payment gateway integration, and authentication within a
-               collaborative team environment.
-               This experience has significantly enhanced my expertise in UI design, functionality, and
-               teamwork.`,
-                "theme": "#e750107f", //op-> 50%
-                "themeOp": "#e750105c", //op-> 80%
-            }
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Education",
-        "items": [
-            {
-                "id": "2",
-                "logo": "assets/logoes/kuk.png",
-                "title": "Kurukshetra University",
-                "location": "Geeta Engineering College",
-                "start_date": "Aug 2018",
-                "end_date": "May 2022",
-                "designation": "B.Tech (Computer Science & Engineering)",
-                "describe": "I have completed my B.Tech in Computer Science & Engineering.",
-                "theme": "#e0d10583",
-                "themeOp": "#e0d10555",
-            }
-        ]
-    }
-]
+// ─── ALL PROJECTS (for the full portfolio grid) ──────────────────────────────
+const allProjects = [
+  ...featuredProjects,
+  {
+    id: "lifeizz",
+    name: "Lifeizz",
+    tagline: "Language Learning App",
+    type: "language",
+    stack: ["Flutter", "Dart", "WebSockets", "REST APIs", "Firebase"],
+    about: "Versatile mobile app for language learning with daily word challenges, community discussions, real-time updates via WebSockets, and phone number authentication.",
+    contributions: ["Full feature implementation", "API integration", "Socket real-time", "Notifications"],
+    android: "https://drive.google.com/drive/folders/1Ay7Cl181HHMk-tTypnTkuWcucX0vmpHU?usp=drive_link",
+    images: [
+      "assets/project/lifeizz/lifeizz1.jpg",
+      "assets/project/lifeizz/lifeizz2.jpg",
+      "assets/project/lifeizz/lifeizz3.jpg",
+    ],
+    theme: { bg: "linear-gradient(135deg, #2e1a4d, #1a0b3b)", accent: "#ff6b9d", icon: "fa-language" }
+  },
+  {
+    id: "ownitoo",
+    name: "Ownitoo",
+    tagline: "Marketplace & Bidding App",
+    type: "marketplace",
+    stack: ["Flutter", "Dart", "WebSockets", "REST APIs", "Payment Gateway"],
+    about: "User-friendly marketplace app enabling buying, selling, bidding, and shared product ownership with real-time group chat and secure payments.",
+    contributions: ["Full feature implementation", "API integration", "Socket-Chat", "Bidding & Shares", "Payments"],
+    android: "https://play.google.com/store/apps/details?id=com.app.ownitoo",
+    ios: "https://apps.apple.com/in/app/ownitoo/id6448990297",
+    images: [
+      "assets/project/ownitoo/01.jpg",
+      "assets/project/ownitoo/02.jpg",
+      "assets/project/ownitoo/03.jpg",
+    ],
+    theme: { bg: "linear-gradient(135deg, #0d1b3b, #1a237e)", accent: "#ffd166", icon: "fa-coins" }
+  },
+  {
+    id: "blubin",
+    name: "BluBin",
+    tagline: "Eco Waste Management App",
+    type: "eco",
+    stack: ["Flutter", "Dart", "Maps", "REST APIs", "Firebase"],
+    about: "Revolutionary waste management app that connects users with trash collectors, tracks pick-up requests, and rewards eco-friendly behavior with redeemable points.",
+    contributions: ["Full feature implementation", "API integration", "Location/Maps", "Notifications"],
+    android: "https://drive.google.com/drive/folders/11wYTPi6h3_CaO5Pd4wMFCXdjZ43Lb9BS?usp=drive_link",
+    images: [
+      "assets/project/blubin/blubin08.jpeg",
+      "assets/project/blubin/blubin02.jpeg",
+      "assets/project/blubin/blubin01.jpeg",
+    ],
+    theme: { bg: "linear-gradient(135deg, #0b2e1a, #1a3b2b)", accent: "#00d4ff", icon: "fa-leaf" }
+  },
+  {
+    id: "jobbie",
+    name: "Jobbie",
+    tagline: "Gig Economy Job Platform",
+    type: "gig",
+    stack: ["Flutter", "Dart", "Maps", "REST APIs", "WebSockets", "Payments"],
+    about: "Platform connecting employers with gig workers for tasks like landscaping, dog care and cleaning. Features job-discovery on map, real-time chat, and secure payment wallet.",
+    contributions: ["Full feature implementation", "API integration", "Map integration", "Socket chat", "Payments"],
+    images: [
+      "assets/project/jobbie/jobbie01.jpeg",
+      "assets/project/jobbie/jobbie02.jpeg",
+      "assets/project/jobbie/jobbie03.jpeg",
+    ],
+    theme: { bg: "linear-gradient(135deg, #4e342e, #5d4037)", accent: "#ffd166", icon: "fa-map-pin" }
+  },
+  {
+    id: "mytasks",
+    name: "My Tasks",
+    tagline: "Task Management App",
+    type: "productivity",
+    stack: ["Flutter", "Dart", "Local DB"],
+    about: "Simple, intuitive task management app with custom categories, priority tracking, and a clean UI to help users stay organized and productive.",
+    contributions: ["UI Design", "Full functionality", "Local database"],
+    android: "https://play.google.com/store/apps/details?id=com.pkumar.link.mytasks",
+    images: [
+      "assets/project/mytasks/1.webp",
+      "assets/project/mytasks/2.webp",
+      "assets/project/mytasks/3.webp",
+    ],
+    theme: { bg: "linear-gradient(135deg, #1c2331, #2e3b4e)", accent: "#6c63ff", icon: "fa-check-double" }
+  }
+];
+
+// ─── CASE STUDIES ────────────────────────────────────────────────────────────
+const caseStudies = [
+  {
+    id: "cs-01",
+    number: "01",
+    title: "Reducing Flutter App Size & Startup Time",
+    subtitle: "Performance Engineering",
+    icon: "fa-gauge-high",
+    accent: "#6c63ff",
+    problem: "The NeoZap application had performance and bundle-size issues affecting user experience — slow startup times and a heavy APK were creating friction in the onboarding funnel.",
+    investigation: [
+      "Dependency audit — identified unused and duplicate packages",
+      "Asset analysis — found uncompressed images and unused font variants",
+      "Build configuration review — identified debug artifacts in release builds",
+      "Architecture review — spotted redundant widget rebuilds and state leaks"
+    ],
+    solution: [
+      "Removed unused dependencies and replaced heavy packages with lightweight alternatives",
+      "Optimized and compressed all image assets, implemented lazy loading",
+      "Cleaned up build configurations and enabled tree-shaking",
+      "Refactored widget trees to minimize unnecessary rebuilds",
+      "Implemented deferred loading for non-critical features"
+    ],
+    result: "40% reduction in APK size and startup overhead, significantly improving first-impression UX and Play Store conversion.",
+    metric: "40%",
+    metricLabel: "APK size & startup improvement"
+  },
+  {
+    id: "cs-02",
+    number: "02",
+    title: "Improving Onboarding Completion",
+    subtitle: "User Experience Engineering",
+    icon: "fa-user-check",
+    accent: "#00d4ff",
+    problem: "Existing onboarding flows had a low quality/completion rate — users were dropping off due to confusing UX, poor validation feedback, and unclear error states.",
+    investigation: [
+      "Mapped the entire onboarding flow and identified drop-off points",
+      "Reviewed API error handling — errors were swallowed without user feedback",
+      "Analyzed form validation logic — validation was inconsistent and delayed",
+      "User flow review — too many steps without clear progress indication"
+    ],
+    solution: [
+      "Redesigned onboarding UX with clearer step indicators and progress feedback",
+      "Implemented real-time form validation with helpful inline error messages",
+      "Improved API error handling to surface meaningful feedback to users",
+      "Added retry logic and graceful degradation for network failures",
+      "Streamlined the flow from passcode setup through 2FA verification"
+    ],
+    result: "Onboarding quality improved from ~35% to 95%, dramatically reducing user drop-off during sign-up.",
+    metric: "35% → 95%",
+    metricLabel: "Onboarding quality improvement"
+  },
+  {
+    id: "cs-03",
+    number: "03",
+    title: "Production Crash Reduction",
+    subtitle: "Reliability Engineering",
+    icon: "fa-shield-halved",
+    accent: "#ff6b9d",
+    problem: "The application had 10+ critical production crashes reported via Crashlytics, affecting real users on the NeoZap platform with 100K+ active users.",
+    investigation: [
+      "Reviewed Crashlytics crash reports — grouped by frequency and severity",
+      "Identified 3 categories: null-safety violations, unhandled API responses, race conditions",
+      "Reproduced critical crashes in development and staging environments",
+      "Traced root causes through logs and stack traces"
+    ],
+    solution: [
+      "Fixed all null-safety violations with proper null-checks and fallbacks",
+      "Added comprehensive API error handling with typed exception classes",
+      "Resolved race conditions in async state management flows",
+      "Implemented production monitoring with custom Crashlytics keys for easier debugging",
+      "Set up crash-alert workflows for faster incident response"
+    ],
+    result: "Reduced critical production crashes from 10+ to near-zero, establishing systematic debugging and monitoring practices.",
+    metric: "10+ → ~0",
+    metricLabel: "Critical production crashes"
+  }
+];
+
+// ─── OPEN SOURCE ──────────────────────────────────────────────────────────────
+const openSourcePackages = [
+  {
+    name: "flutter_sfs",
+    description: "A Flutter package published on pub.dev for scalable file storage utility functions.",
+    pubdev: "https://pub.dev/packages/flutter_sfs",
+    github: "https://github.com/praween-link",
+    icon: "fa-box-open"
+  },
+  {
+    name: "timer_flutter",
+    description: "Lightweight Flutter package for reusable countdown and interval timer functionality.",
+    pubdev: "https://pub.dev/packages/timer_flutter",
+    github: "https://github.com/praween-link",
+    icon: "fa-clock"
+  }
+];
